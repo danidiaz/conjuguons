@@ -20,6 +20,10 @@ Conjuguons! \kɔ̃.jy.ɡɔ̃\
 
 [GLAWI pos](http://redac.univ-tlse2.fr/lexicons/glawi/doc/pos.html)
 
+> The basic unit of Wiktionnaire's articles is the written form (grapheme). A given article may contain several entries having identical or distinct parts of speech (POSs). A POS section may correspond to a canonical form (lemma) or to an inflection.
+
+> homoNb: homograph number, present when several POS sections correspond to the same syntactic category (e.g. three noun POS sections in the article mousse), absent otherwise.
+
 [GLAWI inflectionInfos](http://redac.univ-tlse2.fr/lexicons/glawi/doc/paradigmsAndInflections.html)
 
 > when a POS section describes one or several inflected forms, the inflectionInfos element enumerates the morphosyntactic features of the forms and their lemmas.
@@ -273,4 +277,263 @@ Entries for a two-form verb. Notice the multiple values for a "coordinate" in th
             <inflection form="assiérez" gracePOS="Vmif2p-" prons="a.sje.ʁe"/>
             <inflection form="assoirez" gracePOS="Vmif2p-" prons="a.swa.ʁe"/>
           </paradigm>
+
+How are pronominal verbs handled? 
+
+A word like "reposer" can have *multiple* POS associated (with different homoNb attributes). 
+
+Each POS has its paradigm, and one or more definitions. Inside the definitions,
+label elements of type "gram" can have values like pronominal, intrasitif,
+transitif...
+
+      <pos type="verbe" lemma="1" locution="0" homoNb="2">
+        <pronunciations>
+          <pron>ʁə.po.ze</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="reposes" gracePOS="Vmsp2s-" prons="ʁə.poz"/>
+          <inflection form="reposons" gracePOS="Vmip1p-" prons="ʁə.po.zɔ̃"/>
+          <inflection form="reposassions" gracePOS="Vmsi1p-" prons="ʁə.po.za.sjɔ̃"/>
+          <inflection form="reposez" gracePOS="Vmip2p-" prons="ʁə.po.ze"/>
+          <inflection form="reposait" gracePOS="Vmii3s-" prons="ʁə.po.zɛ"/>
+          <inflection form="repose" gracePOS="Vmsp1s-" prons="ʁə.poz"/>
+          <inflection form="repose" gracePOS="Vmip3s-" prons="ʁə.poz"/>
+          <inflection form="reposés" gracePOS="Vmps-pm" prons=""/>
+          <inflection form="reposez" gracePOS="Vmmp2p-" prons="ʁə.po.ze"/>
+          <inflection form="reposèrent" gracePOS="Vmis3p-" prons="ʁə.po.zɛʁ"/>
+          <inflection form="reposeras" gracePOS="Vmif2s-" prons="ʁə.po.zə.ʁa"/>
+          <inflection form="reposons" gracePOS="Vmmp1p-" prons="ʁə.po.zɔ̃"/>
+          <inflection form="reposai" gracePOS="Vmis1s-" prons="ʁə.po.ze"/>
+          <inflection form="reposes" gracePOS="Vmip2s-" prons="ʁə.poz"/>
+          <inflection form="reposée" gracePOS="Vmps-sf" prons=""/>
+          <inflection form="reposasses" gracePOS="Vmsi2s-" prons="ʁə.po.zas"/>
+          <inflection form="reposiez" gracePOS="Vmii2p-" prons="ʁə.po.zje"/>
+          <inflection form="reposa" gracePOS="Vmis3s-" prons="ʁə.po.za"/>
+          <inflection form="reposassent" gracePOS="Vmsi3p-" prons="ʁə.po.zas"/>
+          <inflection form="reposerais" gracePOS="Vmcp1s-" prons="ʁə.po.zə.ʁɛ"/>
+          <inflection form="reposerions" gracePOS="Vmcp1p-" prons="ʁə.po.zə.ʁjɔ̃"/>
+          <inflection form="reposeront" gracePOS="Vmif3p-" prons="ʁə.po.zə.ʁɔ̃"/>
+          <inflection form="reposais" gracePOS="Vmii1s-" prons="ʁə.po.zɛ"/>
+          <inflection form="reposâmes" gracePOS="Vmis1p-" prons="ʁə.po.zam"/>
+          <inflection form="reposâtes" gracePOS="Vmis2p-" prons="ʁə.po.zat"/>
+          <inflection form="reposas" gracePOS="Vmis2s-" prons="ʁə.po.za"/>
+          <inflection form="reposerais" gracePOS="Vmcp2s-" prons="ʁə.po.zə.ʁɛ"/>
+          <inflection form="reposaient" gracePOS="Vmii3p-" prons="ʁə.po.zɛ"/>
+          <inflection form="reposera" gracePOS="Vmif3s-" prons="ʁə.po.zə.ʁa"/>
+          <inflection form="reposasse" gracePOS="Vmsi1s-" prons="ʁə.po.zas"/>
+          <inflection form="reposées" gracePOS="Vmps-pf" prons=""/>
+          <inflection form="reposent" gracePOS="Vmip3p-" prons="ʁə.poz"/>
+          <inflection form="repose" gracePOS="Vmip1s-" prons="ʁə.poz"/>
+          <inflection form="reposiez" gracePOS="Vmsp2p-" prons="ʁə.po.zje"/>
+          <inflection form="reposé" gracePOS="Vmps-sm" prons="ʁə.po.ze"/>
+          <inflection form="reposerait" gracePOS="Vmcp3s-" prons="ʁə.po.zə.ʁɛ"/>
+          <inflection form="reposât" gracePOS="Vmsi3s-" prons="ʁə.po.za"/>
+          <inflection form="reposer" gracePOS="Vmn----" prons="ʁə.po.ze"/>
+          <inflection form="reposant" gracePOS="Vmpp---" prons="ʁə.po.zã"/>
+          <inflection form="reposions" gracePOS="Vmii1p-" prons="ʁə.po.zjɔ̃"/>
+          <inflection form="reposassiez" gracePOS="Vmsi2p-" prons="ʁə.po.za.sje"/>
+          <inflection form="reposeriez" gracePOS="Vmcp2p-" prons="ʁə.po.zə.ʁje"/>
+          <inflection form="reposerez" gracePOS="Vmif2p-" prons="ʁə.po.zə.ʁe"/>
+          <inflection form="reposais" gracePOS="Vmii2s-" prons="ʁə.po.zɛ"/>
+          <inflection form="repose" gracePOS="Vmsp3s-" prons="ʁə.poz"/>
+          <inflection form="reposions" gracePOS="Vmsp1p-" prons="ʁə.po.zjɔ̃"/>
+          <inflection form="reposerons" gracePOS="Vmif1p-" prons="ʁə.po.zə.ʁɔ̃"/>
+          <inflection form="repose" gracePOS="Vmmp2s-" prons="ʁə.poz"/>
+          <inflection form="reposerai" gracePOS="Vmif1s-" prons="ʁə.po.zə.ʁe"/>
+          <inflection form="reposent" gracePOS="Vmsp3p-" prons="ʁə.poz"/>
+          <inflection form="reposeraient" gracePOS="Vmcp3p-" prons="ʁə.po.zə.ʁɛ"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="transitif"/>
+              </labels>
+              <xml><innerLink ref="mettre">Mettre</innerLink> dans une <innerLink ref="situation">situation</innerLink> <innerLink ref="tranquille">tranquille</innerLink>, mettre en <innerLink ref="état">état</innerLink> de <innerLink ref="repos">repos</innerLink>, pour <innerLink ref="délasser">délasser</innerLink>, pour <innerLink ref="détendre">détendre</innerLink>.</xml>
+              <txt>Mettre dans une situation tranquille, mettre en état de repos, pour délasser, pour détendre.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i><b>reposer</b> sa jambe sur un tabouret.</i>
+              </xml>
+              <txt>reposer sa jambe sur un tabouret.</txt>
+            </example>
+            <example>
+              <xml>
+                <i><b>reposer</b> sa vue, ses yeux sur un objet : les y arrêter avec plaisir, avec complaisance.</i>
+              </xml>
+              <txt>reposer sa vue, ses yeux sur un objet : les y arrêter avec plaisir, avec complaisance.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="transitif"/>
+                <label type="sem" value="figuré"/>
+              </labels>
+              <xml>Procurer du <innerLink ref="calme">calme</innerLink>.</xml>
+              <txt>Procurer du calme.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i><b>reposer</b> la tête, <b>reposer</b> l'esprit, <b>reposer</b> l'âme.</i>
+              </xml>
+              <txt>reposer la tête, reposer l'esprit, reposer l'âme.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>La verdure <b>repose</b> la vue.</i>
+              </xml>
+              <txt>La verdure repose la vue.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="intransitif"/>
+              </labels>
+              <xml>Être <innerLink ref="établi">établi</innerLink>, <innerLink ref="appuyer">appuyé</innerLink>, <innerLink ref="fonder">fondé</innerLink>.</xml>
+              <txt>Être établi, appuyé, fondé.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>L'intégrité journalistique <b>repose</b> largement sur l'absence de conflits de loyautés, et même sur l'absence d'apparence de tels conflits.</i>
+              </xml>
+              <txt>L'intégrité journalistique repose largement sur l'absence de conflits de loyautés, et même sur l'absence d'apparence de tels conflits.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>La base de l'édifice <b>repose</b> sur le roc, sur des pilotis.</i>
+              </xml>
+              <txt>La base de l'édifice repose sur le roc, sur des pilotis.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Son crédit, son autorité ne <b>repose</b> que sur de faibles bases.</i>
+              </xml>
+              <txt>Son crédit, son autorité ne repose que sur de faibles bases.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="intransitif"/>
+              </labels>
+              <xml>Être en <innerLink ref="état">état</innerLink> de <innerLink ref="repos">repos</innerLink>, de <innerLink ref="tranquillité">tranquillité</innerLink>.</xml>
+              <txt>Être en état de repos, de tranquillité.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Il ne dort pas, il <b>repose</b>.</i>
+              </xml>
+              <txt>Il ne dort pas, il repose.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Laisser <b>reposer</b> ses esprits.</i>
+              </xml>
+              <txt>Laisser reposer ses esprits.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="intransitif"/>
+              </labels>
+              <xml><innerLink ref="dormir">Dormir</innerLink>.</xml>
+              <txt>Dormir.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Il n'a pas <b>reposé</b> de toute la nuit.</i>
+              </xml>
+              <txt>Il n'a pas reposé de toute la nuit.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="intransitif"/>
+              </labels>
+              <xml><innerLink ref="déposer">Être déposé</innerLink>, <innerLink ref="placer">être placé</innerLink> en quelque <innerLink ref="endroit">endroit</innerLink>.</xml>
+              <txt>Être déposé, être placé en quelque endroit.</txt>
+            </gloss>
+            <example>
+              <xml><i>Sur le bord du fleuve, […], il rencontra un autre aéroplane qui lui parut à peine endommagé. […]. Il <b>reposait</b> là, abandonné, et l'eau clapotait sur l'extrémité de sa longue queue.</i> }}</xml>
+              <txt>Sur le bord du fleuve, […], il rencontra un autre aéroplane qui lui parut à peine endommagé. […]. Il reposait là, abandonné, et l'eau clapotait sur l'extrémité de sa longue queue. }}</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Le Saint Sacrement <b>repose</b> dans cette chapelle, dans ce tabernacle. - C'est dans cette église que <b>reposent</b> les reliques de tel saint.</i>
+              </xml>
+              <txt>Le Saint Sacrement repose dans cette chapelle, dans ce tabernacle. - C'est dans cette église que reposent les reliques de tel saint.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Voici la tombe où il <b>repose</b>, la pierre sous laquelle il <b>repose</b>.</i>
+              </xml>
+              <txt>Voici la tombe où il repose, la pierre sous laquelle il repose.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="intransitif"/>
+              </labels>
+              <xml><innerLink ref="tenir">Tenir</innerLink> un <innerLink ref="liquide">liquide</innerLink> <innerLink ref="immobile">immobile</innerLink> <innerLink ref="afin">afin</innerLink> qu'ils se <innerLink ref="clarifier">clarifie</innerLink>.</xml>
+              <txt>Tenir un liquide immobile afin qu'ils se clarifie.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Cette eau est trouble, il faut qu'elle <b>repose</b> quelque temps.</i>
+              </xml>
+              <txt>Cette eau est trouble, il faut qu'elle repose quelque temps.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Il faut laisser <b>reposer</b> le vin qui a voyagé.</i>
+              </xml>
+              <txt>Il faut laisser reposer le vin qui a voyagé.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="intransitif"/>
+                <label type="sem" value="figuré"/>
+              </labels>
+              <xml>Pour une <innerLink ref="terre">terre</innerLink>, laisser en <innerLink ref="guéret">guéret</innerLink>, en <innerLink ref="jachère">jachère</innerLink>, sans l'<innerLink ref="ensemencer">ensemencer</innerLink>.</xml>
+              <txt>Pour une terre, laisser en guéret, en jachère, sans l'ensemencer.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Laisser <b>reposer</b> une terre labourable.</i>
+              </xml>
+              <txt>Laisser reposer une terre labourable.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="intransitif"/>
+                <label type="sem" value="figuré"/>
+              </labels>
+              <xml>Pour un <innerLink ref="ouvrage">ouvrage</innerLink>, le garder pendant un certain temps, sans le <innerLink ref="relire">relire</innerLink>, sans le montrer, sans le rendre public, afin de le revoir ensuite à loisir et de sang-froid.</xml>
+              <txt>Pour un ouvrage, le garder pendant un certain temps, sans le relire, sans le montrer, sans le rendre public, afin de le revoir ensuite à loisir et de sang-froid.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Laisser <b>reposer</b> un ouvrage.</i>
+              </xml>
+              <txt>Laisser reposer un ouvrage.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="gram" value="pronominal"/>
+              </labels>
+              <xml><innerLink ref="cesser">Cesser</innerLink> de <innerLink ref="travailler">travailler</innerLink>, d'<innerLink ref="agir">agir</innerLink>, d'être en <innerLink ref="mouvement">mouvement</innerLink>, pour faire <innerLink ref="disparaître">disparaître</innerLink> la <innerLink ref="fatigue">fatigue</innerLink>.</xml>
+              <txt>Cesser de travailler, d'agir, d'être en mouvement, pour faire disparaître la fatigue.</txt>
+            </gloss>
 
