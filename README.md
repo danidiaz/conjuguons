@@ -16,6 +16,8 @@ Conjuguons! \kɔ̃.jy.ɡɔ̃\
 
 > The programs using XML::DOM first work like SAX-parsers in order to build the textual content of a given article and then build a DOM document of the current article (discarding the DOM of the previous article). Once the DOM built, the search/extraction is performed.
 
+[Ne jetons pas le Wiktionnaire avec l’oripeau du Web ! Études et réalisations fondées sur le dictionnaire collaboratif](https://www.shs-conferences.org/articles/shsconf/pdf/2014/05/shsconf_cmlf14_01216.pdf)
+
 [GLAWI pos](http://redac.univ-tlse2.fr/lexicons/glawi/doc/pos.html)
 
 [GLAWI inflectionInfos](http://redac.univ-tlse2.fr/lexicons/glawi/doc/paradigmsAndInflections.html)
@@ -34,6 +36,14 @@ Conjuguons! \kɔ̃.jy.ɡɔ̃\
 > + tense (p: present, i: imperfect, f: future, s: past)
 > + person ([123])
 > + number (s: singular, p: plural)
+
+> Rajman, M., Lecomte, J., and Paroubek, P. (1997). Format de description lexicale pour le français. Partie 2 : Description morpho-syntaxique. Technical report, EPFL & INaLF. GRACE GTR-3-2.1.
+
+[GLAWI paradigm](http://redac.univ-tlse2.fr/lexicons/glawi/doc/paradigmsAndInflections.html)
+
+> paradigm: when a POS section describes a lemma, the inflectional paradigm element and its inflection children give all the inflected forms of the paradigm (when they are present in Wiktionnaire). 
+
+> When a POS section describes one or several inflected forms, the inflectionInfos element enumerates the morphosyntactic features of the forms and their lemmas. When it describes a lemma, the inflectional paradigm element and its inflection children give all the inflected forms of the paradigm (when they are present in Wiktionnaire).
 
 Entry for an infinitive:
 
