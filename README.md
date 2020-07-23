@@ -537,3 +537,6 @@ transitif...
               <txt>Cesser de travailler, d'agir, d'être en mouvement, pour faire disparaître la fatigue.</txt>
             </gloss>
 
+[sqlite tutorial](https://www.sqlitetutorial.net/)
+
+
