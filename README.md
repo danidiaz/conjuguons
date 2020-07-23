@@ -539,4 +539,6 @@ transitif...
 
 [sqlite tutorial](https://www.sqlitetutorial.net/)
 
+[sqlite cli](https://sqlite.org/cli.html)
+
 
