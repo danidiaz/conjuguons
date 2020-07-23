@@ -541,4 +541,7 @@ transitif...
 
 [sqlite cli](https://sqlite.org/cli.html)
 
+[sqlite in 5 min](https://www.sqlite.org/quickstart.html)
+
+> At a shell or DOS prompt, enter: "sqlite3 test.db". This will create a new database named "test.db". (You can use a different name if you like.)
 
