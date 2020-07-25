@@ -555,4 +555,7 @@ transitif...
 
 > I think I need a library that reads an XML file using stream - but parse each entry using DOM. Is there such a thing?
 
+[javadocs for module java.xml](https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/module-summary.html)
+
+
 
