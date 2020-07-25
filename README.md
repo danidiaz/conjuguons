@@ -547,3 +547,12 @@ transitif...
 
 [Baeldung - Parsing an XML File Using SAX Parser](https://www.baeldung.com/java-sax-parser)
 
+[differences between DOM, SAX and StAX XML parsers?](https://stackoverflow.com/questions/21019509/what-are-the-differences-between-dom-sax-and-stax-xml-parsers)
+
+[Reading a big XML file using stax and dom](https://stackoverflow.com/questions/9379868/reading-a-big-xml-file-using-stax-and-dom) very useful!
+
+> My XML files don't have a certain structure - so I cannot use JaxB. 
+
+> I think I need a library that reads an XML file using stream - but parse each entry using DOM. Is there such a thing?
+
+
