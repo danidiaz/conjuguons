@@ -545,3 +545,5 @@ transitif...
 
 > At a shell or DOS prompt, enter: "sqlite3 test.db". This will create a new database named "test.db". (You can use a different name if you like.)
 
+[Baeldung - Parsing an XML File Using SAX Parser](https://www.baeldung.com/java-sax-parser)
+
