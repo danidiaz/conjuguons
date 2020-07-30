@@ -575,4 +575,6 @@ transitif...
 
 [sqlite types](https://www.sqlite.org/datatype3.html)
 
+[spring boot sqlite](https://www.baeldung.com/spring-boot-sqlite)
+
 
