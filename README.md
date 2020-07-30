@@ -559,3 +559,8 @@ transitif...
 
 [Spring: overriding one application.property from command line](https://stackoverflow.com/questions/37052857/spring-overriding-one-application-property-from-command-line)
 
+[Sqlite CREATE TABLE](https://sqlite.org/lang_createtable.html)
+
+> Each table in SQLite may have at most one PRIMARY KEY. If the keywords PRIMARY KEY are added to a column definition, then the primary key for the table consists of that single column. Or, if a PRIMARY KEY clause is specified as a table-constraint, then the primary key of the table consists of the list of columns specified as part of the PRIMARY KEY clause. The PRIMARY KEY clause must contain only column names — the use of expressions in an indexed-column of a PRIMARY KEY is not supported. An error is raised if more than one PRIMARY KEY clause appears in a CREATE TABLE statement. The PRIMARY KEY is optional for ordinary tables but is required for WITHOUT ROWID tables.
+
+
