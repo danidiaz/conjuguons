@@ -567,4 +567,12 @@ transitif...
 
 [Is an index needed for a primary key in SQLite?](https://stackoverflow.com/questions/3379292/is-an-index-needed-for-a-primary-key-in-sqlite)
 
+[sqlite autoincrement](https://www.sqlite.org/autoinc.html)
+
+> On an INSERT, if the ROWID or INTEGER PRIMARY KEY column is not explicitly given a value, then it will be filled automatically with an unused integer, usually one more than the largest ROWID currently in use. This is true regardless of whether or not the AUTOINCREMENT keyword is used.
+
+> If the AUTOINCREMENT keyword appears after INTEGER PRIMARY KEY, that changes the automatic ROWID assignment algorithm to prevent the reuse of ROWIDs over the lifetime of the database. In other words, the purpose of AUTOINCREMENT is to prevent the reuse of ROWIDs from previously deleted rows.
+
+[sqlite types](https://www.sqlite.org/datatype3.html)
+
 
