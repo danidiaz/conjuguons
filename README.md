@@ -577,4 +577,9 @@ transitif...
 
 [spring boot sqlite](https://www.baeldung.com/spring-boot-sqlite)
 
+[What is the purpose of mvnw and mvnw.cmd files?](https://stackoverflow.com/questions/38723833/what-is-the-purpose-of-mvnw-and-mvnw-cmd-files)
+
+[Are multiple .gitignores frowned on?](https://stackoverflow.com/questions/3305869/are-multiple-gitignores-frowned-on)
+
+> Please remember that patterns in .gitignore file apply recursively to the (sub)directory the file is in and all its subdirectories, unless pattern contains '/' (so e.g. pattern name applies to any file named name in given directory and all its subdirectories, while /name applies to file with this name only in given directory).
 
