@@ -1,4 +1,4 @@
-package org.danidiaz.glawiimporter;
+package org.danidiaz.glawiimporter.appya;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -9,7 +9,7 @@ public class Importer implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("I'm running!");
+        System.out.println("I'm running A!");
     }
     
 }
