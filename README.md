@@ -559,6 +559,26 @@ transitif...
 > trouble:
 > Caused by: java.lang.IllegalStateException: StAXSource(XMLEventReader) with XMLEventReader not in XMLStreamConstants.START_DOCUMENT or XMLStreamConstants.START_ELEMENT state
 
+Observations:
+
+- DOMResult must be created with a root element, like this:
+
+    DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+    DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+    Document doc = docBuilder.newDocument();
+    Element rootElement = doc.createElement("wat");
+    final DOMResult result = new DOMResult(rootElement);
+
+  Otherwise is does strange things like picking the name of the first node encountered as the root node.
+
+- The "cursor" in the stream of events must have already passed the opening
+  tag. For the parsing to work. It keeps parsing until encounters eof, or an
+  unmatched closing tag. (I found this by experiment, I havent found any piece
+  of documentation that explains it.
+
+- That means that for parsing consecutive elements, me might need to advance
+  the cursor over the opening tags each sigle time.
+
 [javadocs for module java.xml](https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/module-summary.html)
 
 [Spring: overriding one application.property from command line](https://stackoverflow.com/questions/37052857/spring-overriding-one-application-property-from-command-line)
