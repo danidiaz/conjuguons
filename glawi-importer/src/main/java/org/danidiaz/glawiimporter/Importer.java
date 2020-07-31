@@ -18,6 +18,8 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.sql.ResultSet;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 @Component
 public class Importer implements ApplicationRunner {
@@ -42,13 +44,13 @@ public class Importer implements ApplicationRunner {
             TransformerFactory tf = TransformerFactory.newInstance();
             Transformer t = tf.newTransformer();
 
-            while(xsr.nextTag() == XMLStreamConstants.START_ELEMENT) {
-                DOMResult result = new DOMResult();
-                t.transform(new StAXSource(xsr), result);
-                Node domNode = result.getNode();
-
-                System.out.println(domNode);
-            }
+            StreamSupport
+                    .stream(new GLAWIIterable(t, xsr).spliterator(), false)
+                    .limit(3)
+                    .peek((n) -> {
+                        System.out.println(n.getClass());
+                    })
+                    .forEach(System.out::println);
         }
 
 //        System.out.println(fileSupplier.get());

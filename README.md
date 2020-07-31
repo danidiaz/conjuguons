@@ -591,4 +591,8 @@ transitif...
 
 [How to implement a Java stream?](https://stackoverflow.com/questions/30685623/how-to-implement-a-java-stream). [Stream from Iterable](https://www.baeldung.com/java-iterable-to-stream). [Stream package](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/stream/package-summary.html). [Stream javadoc](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/stream/Stream.html#iterate(T,java.util.function.UnaryOperator)). [StreamSupport javadoc](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/stream/StreamSupport.html).
 
+[XMLStreamReader](https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html).
+
+[StaX parsing: Transformer.transform method moves cursor automatically, not always nice](https://stackoverflow.com/questions/24350740/stax-parsing-transformer-transform-method-moves-cursor-automatically-not-alway)
+
 
