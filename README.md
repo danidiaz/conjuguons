@@ -556,6 +556,9 @@ transitif...
 
 > I think I need a library that reads an XML file using stream - but parse each entry using DOM. Is there such a thing?
 
+> trouble:
+> Caused by: java.lang.IllegalStateException: StAXSource(XMLEventReader) with XMLEventReader not in XMLStreamConstants.START_DOCUMENT or XMLStreamConstants.START_ELEMENT state
+
 [javadocs for module java.xml](https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/module-summary.html)
 
 [Spring: overriding one application.property from command line](https://stackoverflow.com/questions/37052857/spring-overriding-one-application-property-from-command-line)
