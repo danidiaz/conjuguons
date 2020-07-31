@@ -549,7 +549,8 @@ transitif...
 
 [differences between DOM, SAX and StAX XML parsers?](https://stackoverflow.com/questions/21019509/what-are-the-differences-between-dom-sax-and-stax-xml-parsers)
 
-[Reading a big XML file using stax and dom](https://stackoverflow.com/questions/9379868/reading-a-big-xml-file-using-stax-and-dom) very useful! [Stream XML node by node](https://stackoverflow.com/questions/36617013/stream-xml-node-by-node)
+[Reading a big XML file using stax and dom](https://stackoverflow.com/questions/9379868/reading-a-big-xml-file-using-stax-and-dom) very useful! [Stream XML node by node](https://stackoverflow.com/questions/36617013/stream-xml-node-by-node). [XMLEventReader has peek]( https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/javax/xml/stream/XMLEventReader.html ). [What is the difference between XMLStreamReader and XMLEventReader?](https://stackoverflow.com/questions/36717402/what-is-the-difference-between-xmlstreamreader-and-xmleventreader). [How to read modify fragments of XML using StAX in Java?
+](https://stackoverflow.com/questions/41803078/how-to-read-modify-fragments-of-xml-using-stax-in-java).
 
 > My XML files don't have a certain structure - so I cannot use JaxB. 
 

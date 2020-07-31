@@ -1,0 +1,10 @@
+<items>
+   <item>
+        <name> nam1 </name>
+        <price> 30 </price>
+   </item>
+   <item>
+        <name> nam3 </name>
+        <price> 40 </price>
+   </item>
+</items>
