@@ -4,22 +4,25 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamReader;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stax.StAXSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.*;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.sql.ResultSet;
 import java.util.function.Supplier;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 @Component
 public class Importer implements ApplicationRunner {
@@ -39,18 +42,112 @@ public class Importer implements ApplicationRunner {
 
         try (var reader = new BufferedReader(new FileReader(fileSupplier.get(), StandardCharsets.UTF_8))) {
             final XMLInputFactory xif = XMLInputFactory.newInstance();
-            final XMLStreamReader xsr = xif.createXMLStreamReader(reader);
+            final XMLEventReader xer = xif.createXMLEventReader(reader);
 
             TransformerFactory tf = TransformerFactory.newInstance();
+            System.out.println(tf.getClass());
             Transformer t = tf.newTransformer();
 
-            StreamSupport
-                    .stream(new GLAWIIterable(t, xsr).spliterator(), false)
-                    .limit(3)
-                    .peek((n) -> {
-                        System.out.println(n.getClass());
-                    })
-                    .forEach(System.out::println);
+//            xer.next();
+//            xer.next();
+//            xer.next();
+//            xer.next();
+//
+//            System.out.println(xer.getEventType());
+//            xer.nextTag();
+//            System.out.println(xer.getEventType());
+//            System.out.println(xer.getName());
+//            xer.nextTag();
+//            System.out.println(xer.getEventType());
+//            System.out.println(xer.getName());
+
+            while (!xer.peek().isStartElement()) {
+                System.out.println(">-----------------------------------");
+                System.out.println(xer.peek().getClass());
+                System.out.println("<-----------------------------------");
+                xer.next();
+            }
+            System.out.println("namy");
+            System.out.println(xer.peek().asStartElement().getName());
+            xer.next();
+            while (!xer.peek().isStartElement()) {
+                System.out.println(">-----------------------------------");
+                System.out.println(xer.peek().getClass());
+                System.out.println("<-----------------------------------");
+                xer.next();
+            }
+            System.out.println("namy");
+            System.out.println(xer.peek().asStartElement().getName());
+            xer.next();
+
+            while (!xer.peek().isStartElement()) {
+                System.out.println(">-----------------------------------");
+                System.out.println(xer.peek().getClass());
+                System.out.println("<-----------------------------------");
+                xer.next();
+            }
+            System.out.println("namy");
+
+            System.out.println(xer.peek().asStartElement().getName());
+//            System.out.println(xer.peek().getClass());
+//            xer.nextTag();
+//            System.out.println("-----------------------------------");
+//            System.out.println(xer.peek().getClass());
+//            System.out.println("<-----------------------------------");
+            {
+                DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+                DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+                Document doc = docBuilder.newDocument();
+                Element rootElement = doc.createElement("wat");
+
+                final DOMResult result = new DOMResult(rootElement);
+                t.transform(new StAXSource(xer), result);
+                final Node domNode = result.getNode();
+                System.out.println(domNode);
+                System.out.println(domNode.getTextContent());
+
+                System.out.println("pp-----------------------------------");
+                System.out.println(pprint(domNode));
+                System.out.println("pp-----------------------------------");
+            }
+            while (!xer.peek().isStartElement()) {
+                System.out.println(">-----------------------------------");
+                System.out.println(xer.peek().getClass());
+                System.out.println("<-----------------------------------");
+                xer.next();
+            }
+            xer.next();
+            while (!xer.peek().isStartElement()) {
+                System.out.println(">-----------------------------------");
+                System.out.println(xer.peek().getClass());
+                System.out.println("<-----------------------------------");
+                xer.next();
+            }
+            {
+
+                final DOMResult result = new DOMResult();
+                t.transform(new StAXSource(xer), result);
+                final Node domNode = result.getNode();
+                System.out.println(domNode);
+                System.out.println(domNode.getTextContent());
+
+                System.out.println("pp-----------------------------------");
+                System.out.println(pprint(domNode));
+                System.out.println("pp-----------------------------------");
+            }
+//            for (int i = 0; i < 10; i++) {
+//                System.out.println(xer.getEventType());
+//                System.out.println(xer.getName());
+//                xer.nextTag();
+//            }
+
+//            StreamSupport
+//                    .stream(new GLAWIIterable(t, xer).spliterator(), false)
+//                    .limit(3)
+//                    .peek((n) -> {
+//                        System.out.println(n.getClass());
+//                    })
+//                    .forEach(System.out::println);
         }
 
 //        System.out.println(fileSupplier.get());
@@ -60,5 +157,15 @@ public class Importer implements ApplicationRunner {
 //        });
     }
 
+    public static String pprint(Node node) throws TransformerException {
+        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+//initialize StreamResult with File object to save to file
+        StreamResult result = new StreamResult(new StringWriter());
+        DOMSource source = new DOMSource(node);
+        transformer.transform(source, result);
+        return result.getWriter().toString();
+    }
 
 }
