@@ -549,7 +549,7 @@ transitif...
 
 [differences between DOM, SAX and StAX XML parsers?](https://stackoverflow.com/questions/21019509/what-are-the-differences-between-dom-sax-and-stax-xml-parsers)
 
-[Reading a big XML file using stax and dom](https://stackoverflow.com/questions/9379868/reading-a-big-xml-file-using-stax-and-dom) very useful!
+[Reading a big XML file using stax and dom](https://stackoverflow.com/questions/9379868/reading-a-big-xml-file-using-stax-and-dom) very useful! [Stream XML node by node](https://stackoverflow.com/questions/36617013/stream-xml-node-by-node)
 
 > My XML files don't have a certain structure - so I cannot use JaxB. 
 
@@ -582,4 +582,13 @@ transitif...
 [Are multiple .gitignores frowned on?](https://stackoverflow.com/questions/3305869/are-multiple-gitignores-frowned-on)
 
 > Please remember that patterns in .gitignore file apply recursively to the (sub)directory the file is in and all its subdirectories, unless pattern contains '/' (so e.g. pattern name applies to any file named name in given directory and all its subdirectories, while /name applies to file with this name only in given directory).
+
+[spring boot command line arguments](https://www.baeldung.com/spring-boot-command-line-arguments)
+
+> mvn spring-boot:run -D"spring-boot.run.arguments"="foo.txt"
+
+[buffered reader](http://tutorials.jenkov.com/java-io/bufferedreader.html)
+
+[How to implement a Java stream?](https://stackoverflow.com/questions/30685623/how-to-implement-a-java-stream). [Stream from Iterable](https://www.baeldung.com/java-iterable-to-stream). [Stream package](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/stream/package-summary.html). [Stream javadoc](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/stream/Stream.html#iterate(T,java.util.function.UnaryOperator)). [StreamSupport javadoc](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/stream/StreamSupport.html).
+
 
