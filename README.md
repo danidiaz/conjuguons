@@ -601,4 +601,7 @@ transitif...
 
 [How to pretty print XML from Java?](https://stackoverflow.com/questions/139076/how-to-pretty-print-xml-from-java)
 
+[Should Iterator.hasNext be side effect free?](https://stackoverflow.com/questions/13291258/should-iterator-hasnext-be-side-effect-free)
+
+> It would be OK for hasNext to have side effects as long as they are not perceptible from the outside. Above all, it must be idempotent. 
 
