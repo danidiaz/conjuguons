@@ -596,4 +596,6 @@ transitif...
 
 [StaX parsing: Transformer.transform method moves cursor automatically, not always nice](https://stackoverflow.com/questions/24350740/stax-parsing-transformer-transform-method-moves-cursor-automatically-not-alway)
 
+[How to pretty print XML from Java?](https://stackoverflow.com/questions/139076/how-to-pretty-print-xml-from-java)
+
 
