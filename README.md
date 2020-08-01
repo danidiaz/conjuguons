@@ -625,3 +625,4 @@ Observations:
 
 > It would be OK for hasNext to have side effects as long as they are not perceptible from the outside. Above all, it must be idempotent. 
 
+[Oracle Stax tutorial](https://docs.oracle.com/javase/tutorial/jaxp/stax/index.html)
