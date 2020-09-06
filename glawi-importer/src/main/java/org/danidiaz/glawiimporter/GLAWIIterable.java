@@ -102,8 +102,15 @@ public class GLAWIIterable implements Iterable<Node> {
                 }
                 if (next.isStartElement() &&
                         next.asStartElement().getName().getLocalPart().equals(elementTag)) {
+                    consumeWhitespaceBeforeTag();
                     return ParseState.READY_FOR_NEXT;
                 }
+            }
+        }
+
+        private void consumeWhitespaceBeforeTag() throws XMLStreamException {
+            while (!reader.peek().isStartElement()) {
+                reader.nextEvent();
             }
         }
     }

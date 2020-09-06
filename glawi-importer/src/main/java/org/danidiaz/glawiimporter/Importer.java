@@ -178,12 +178,12 @@ public class Importer implements ApplicationRunner {
     }
 
     public static String pprint(Node node) throws TransformerException {
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        final Transformer transformer = TransformerFactory.newInstance().newTransformer();
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
         transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
-//initialize StreamResult with File object to save to file
-        StreamResult result = new StreamResult(new StringWriter());
-        DOMSource source = new DOMSource(node);
+        //initialize StreamResult with File object to save to file
+        final StreamResult result = new StreamResult(new StringWriter());
+        final DOMSource source = new DOMSource(node);
         transformer.transform(source, result);
         return result.getWriter().toString();
     }
