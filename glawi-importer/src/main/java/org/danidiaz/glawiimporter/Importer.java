@@ -51,7 +51,7 @@ public class Importer implements ApplicationRunner {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 
-            GLAWIIterable iterable = new GLAWIIterable(docBuilder, t, "items", "item", () -> xer);
+            GLAWIIterable iterable = new GLAWIIterable(t, "items", "item", () -> xer);
             for (Node node : iterable) {
                 System.out.println(pprint(node));
             }

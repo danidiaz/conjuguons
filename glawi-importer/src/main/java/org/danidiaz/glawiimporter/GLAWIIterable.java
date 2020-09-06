@@ -1,8 +1,8 @@
 package org.danidiaz.glawiimporter;
 
-import org.w3c.dom.Node;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.XMLEvent;
@@ -13,20 +13,17 @@ import javax.xml.transform.stax.StAXSource;
 import java.util.Iterator;
 import java.util.function.Supplier;
 
-public class GLAWIIterable implements Iterable<Node> {
+public class GLAWIIterable implements Iterable<Element> {
 
-    private final DocumentBuilder builder;
     private final Transformer t;
     private final String enclosingTag;
     private final String elementTag;
     private final Supplier<XMLEventReader> readerSupplier;
 
-    public GLAWIIterable(DocumentBuilder builder,
-                         Transformer t,
+    public GLAWIIterable(Transformer t,
                          String enclosingTag,
                          String elementTag,
                          Supplier<XMLEventReader> readerSupplier) {
-        this.builder = builder;
         this.t = t;
         this.readerSupplier = readerSupplier;
         this.enclosingTag = enclosingTag;
@@ -34,11 +31,11 @@ public class GLAWIIterable implements Iterable<Node> {
     }
 
     @Override
-    public Iterator<Node> iterator() {
+    public Iterator<Element> iterator() {
             return new NodeIterator(readerSupplier.get());
     }
 
-    private class NodeIterator implements Iterator<Node> {
+    private class NodeIterator implements Iterator<Element> {
 
         private final XMLEventReader reader;
         private ParseState state;
@@ -67,17 +64,21 @@ public class GLAWIIterable implements Iterable<Node> {
         }
 
         @Override
-        public Node next() {
+        public Element next() {
             if (!hasNext()) {
                 throw new IllegalStateException();
             }
             try {
                 final DOMResult result = new DOMResult();
                 t.transform(new StAXSource(reader), result);
-                final Node node = result.getNode();
-                node.setNodeValue(elementTag);
+                final Document document = (Document) result.getNode();
+                final Element element = (Element) document.getFirstChild();
+/*
+                element.setAttribute("name", elementTag);
+                element.setAttribute("tagName", elementTag);
+*/
                 state = ParseState.AFTER_PARSING;
-                return node;
+                return element;
             } catch (XMLStreamException | TransformerException e) {
                 throw new IllegalStateException(e);
             }
