@@ -20,6 +20,8 @@ import javax.xml.transform.stax.StAXSource;
 import java.io.Reader;
 import java.util.Iterator;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 public class DictionaryEntries implements Iterable<Element> {
 
@@ -33,6 +35,10 @@ public class DictionaryEntries implements Iterable<Element> {
         this.readerSupplier = readerSupplier;
         this.enclosingTag = enclosingTag;
         this.elementTag = elementTag;
+    }
+
+    public Stream<Element> stream() {
+        return StreamSupport.stream(spliterator(), false);
     }
 
     @Override
