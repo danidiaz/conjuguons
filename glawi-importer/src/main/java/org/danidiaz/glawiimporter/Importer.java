@@ -4,8 +4,6 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -16,11 +14,12 @@ import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stax.StAXSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.function.Supplier;
 
@@ -44,14 +43,14 @@ public class Importer implements ApplicationRunner {
             final XMLInputFactory xif = XMLInputFactory.newInstance();
             final XMLEventReader xer = xif.createXMLEventReader(reader);
 
-            TransformerFactory tf = TransformerFactory.newInstance();
+            final TransformerFactory tf = TransformerFactory.newInstance();
             System.out.println(tf.getClass());
-            Transformer t = tf.newTransformer();
+            final Transformer t = tf.newTransformer();
 
-            DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+            final DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+            final DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 
-            GLAWIIterable iterable = new GLAWIIterable(t, "items", "item", () -> xer);
+            final GLAWIIterable iterable = new GLAWIIterable(t, "items", "item", () -> xer);
             for (Node node : iterable) {
                 System.out.println(pprint(node));
             }

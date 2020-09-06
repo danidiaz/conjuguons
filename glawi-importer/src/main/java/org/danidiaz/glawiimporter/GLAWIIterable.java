@@ -32,15 +32,15 @@ public class GLAWIIterable implements Iterable<Element> {
 
     @Override
     public Iterator<Element> iterator() {
-            return new NodeIterator(readerSupplier.get());
+            return new ElementIterator(readerSupplier.get());
     }
 
-    private class NodeIterator implements Iterator<Element> {
+    private class ElementIterator implements Iterator<Element> {
 
         private final XMLEventReader reader;
         private ParseState state;
 
-        public NodeIterator(XMLEventReader reader) {
+        public ElementIterator(XMLEventReader reader) {
             this.reader = reader;
             this.state = ParseState.INITIAL;
         }
