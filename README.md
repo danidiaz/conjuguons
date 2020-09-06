@@ -626,3 +626,19 @@ Observations:
 > It would be OK for hasNext to have side effects as long as they are not perceptible from the outside. Above all, it must be idempotent. 
 
 [Oracle Stax tutorial](https://docs.oracle.com/javase/tutorial/jaxp/stax/index.html)
+
+[Java switch expressions.](https://openjdk.java.net/jeps/361)
+
+
+> The cases of a switch expression must be exhaustive; for all possible values there must be a matching switch label. (Obviously switch statements are not required to be exhaustive.)
+
+> In practice this normally means that a default clause is required; however, in the case of an enum switch expression that covers all known constants, a default clause is inserted by the compiler to indicate that the enum definition has changed between compile-time and runtime. Relying on this implicit default clause insertion makes for more robust code; now when code is recompiled, the compiler checks that all cases are explicitly handled. Had the developer inserted an explicit default clause (as is the case today) a possible error will have been hidden.
+
+[adopt node vs. import node (Java XML)](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node))
+
+## run instructions
+
+To run the importer:
+
+     mvn package ;  mvn spring-boot:run -D"spring-boot.run.arguments"="example.xml"
+

@@ -6,8 +6,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Node;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.transform.OutputKeys;
@@ -22,6 +20,7 @@ import java.io.FileReader;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.function.Supplier;
+import java.util.stream.StreamSupport;
 
 @Component
 public class Importer implements ApplicationRunner {
@@ -40,16 +39,7 @@ public class Importer implements ApplicationRunner {
         System.out.println("I'm running!");
 
         try (var reader = new BufferedReader(new FileReader(fileSupplier.get(), StandardCharsets.UTF_8))) {
-            final XMLInputFactory xif = XMLInputFactory.newInstance();
-            final XMLEventReader xer = xif.createXMLEventReader(reader);
-
-            final TransformerFactory tf = TransformerFactory.newInstance();
-            final Transformer t = tf.newTransformer();
-
-            final DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-            final DocumentBuilder builder = docFactory.newDocumentBuilder();
-
-            final GLAWIIterable iterable = new GLAWIIterable(t, "items", "item", () -> xer, builder);
+            final DictionaryEntries iterable = new DictionaryEntries("items", "item", () -> reader);
             for (Node node : iterable) {
                 System.out.println(pprint(node));
             }
