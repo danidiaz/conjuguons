@@ -48,113 +48,133 @@ public class Importer implements ApplicationRunner {
             System.out.println(tf.getClass());
             Transformer t = tf.newTransformer();
 
+            DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+
+            GLAWIIterable iterable = new GLAWIIterable(docBuilder, t, "items", "item", () -> xer);
+            for (Node node : iterable) {
+                System.out.println(pprint(node));
+            }
+        }
+/*
 //            xer.next();
 //            xer.next();
 //            xer.next();
 //            xer.next();
 //
-//            System.out.println(xer.getEventType());
-//            xer.nextTag();
-//            System.out.println(xer.getEventType());
-//            System.out.println(xer.getName());
-//            xer.nextTag();
-//            System.out.println(xer.getEventType());
-//            System.out.println(xer.getName());
+//            system.out.println(xer.geteventtype());
+//            xer.nexttag();
+//            system.out.println(xer.geteventtype());
+//            system.out.println(xer.getname());
+//            xer.nexttag();
+//            system.out.println(xer.geteventtype());
+//            system.out.println(xer.getname());
 
-            while (!xer.peek().isStartElement()) {
-                System.out.println(">-----------------------------------");
-                System.out.println(xer.peek().getClass());
-                System.out.println("<-----------------------------------");
+            while (!xer.peek().isstartelement()) {
+                system.out.println("> find the root element ------------");
+                system.out.println(xer.peek().getclass());
+                system.out.println("<-----------------------------------");
                 xer.next();
             }
-            System.out.println("namy");
-            System.out.println(xer.peek().asStartElement().getName());
+            system.out.println("namy");
+            system.out.println(xer.peek().asstartelement().getname());
             xer.next();
-            while (!xer.peek().isStartElement()) {
-                System.out.println(">-----------------------------------");
-                System.out.println(xer.peek().getClass());
-                System.out.println("<-----------------------------------");
+            while (!xer.peek().isstartelement()) {
+                system.out.println("> find the next item ---------------");
+                system.out.println(xer.peek().getclass());
+                system.out.println("<-----------------------------------");
                 xer.next();
             }
-            System.out.println("namy");
-            System.out.println(xer.peek().asStartElement().getName());
+            system.out.println("namy");
+            system.out.println(xer.peek().asstartelement().getname());
             xer.next();
 
-            while (!xer.peek().isStartElement()) {
-                System.out.println(">-----------------------------------");
-                System.out.println(xer.peek().getClass());
-                System.out.println("<-----------------------------------");
+            while (!xer.peek().isstartelement()) {
+                system.out.println(">-----------------------------------");
+                system.out.println(xer.peek().getclass());
+                system.out.println("<-----------------------------------");
                 xer.next();
             }
-            System.out.println("namy");
+            system.out.println("namy");
 
-            System.out.println(xer.peek().asStartElement().getName());
-//            System.out.println(xer.peek().getClass());
-//            xer.nextTag();
-//            System.out.println("-----------------------------------");
-//            System.out.println(xer.peek().getClass());
-//            System.out.println("<-----------------------------------");
+            system.out.println(xer.peek().asstartelement().getname());
+//            system.out.println(xer.peek().getclass());
+//            xer.nexttag();
+//            system.out.println("-----------------------------------");
+//            system.out.println(xer.peek().getclass());
+//            system.out.println("<-----------------------------------");
             {
-                DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-                DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-                Document doc = docBuilder.newDocument();
-                Element rootElement = doc.createElement("wat");
+                documentbuilderfactory docfactory = documentbuilderfactory.newinstance();
+                documentbuilder docbuilder = docfactory.newdocumentbuilder();
+                document doc = docbuilder.newdocument();
+                element rootelement = doc.createelement("wat");
 
-                final DOMResult result = new DOMResult(rootElement);
-                t.transform(new StAXSource(xer), result);
-                final Node domNode = result.getNode();
-                System.out.println(domNode);
-                System.out.println(domNode.getTextContent());
+                final domresult result = new domresult(rootelement);
+                t.transform(new staxsource(xer), result);
+                final node domnode = result.getnode();
+                system.out.println(domnode);
+                system.out.println(domnode.gettextcontent());
 
-                System.out.println("pp-----------------------------------");
-                System.out.println(pprint(domNode));
-                System.out.println("pp-----------------------------------");
+                system.out.println("pp-----------------------------------");
+                system.out.println(pprint(domnode));
+                system.out.println("pp-----------------------------------");
             }
-            while (!xer.peek().isStartElement()) {
-                System.out.println(">-----------------------------------");
-                System.out.println(xer.peek().getClass());
-                System.out.println("<-----------------------------------");
+            while (!xer.peek().isstartelement()) {
+                system.out.println(">-----------------------------------");
+                system.out.println(xer.peek().getclass());
+                system.out.println("<-----------------------------------");
                 xer.next();
             }
             xer.next();
-            while (!xer.peek().isStartElement()) {
-                System.out.println(">-----------------------------------");
-                System.out.println(xer.peek().getClass());
-                System.out.println("<-----------------------------------");
+            while (!xer.peek().isstartelement()) {
+                system.out.println(">-----------------------------------");
+                system.out.println(xer.peek().getclass());
+                system.out.println("<-----------------------------------");
                 xer.next();
             }
             {
 
-                final DOMResult result = new DOMResult();
-                t.transform(new StAXSource(xer), result);
-                final Node domNode = result.getNode();
-                System.out.println(domNode);
-                System.out.println(domNode.getTextContent());
+*/
+/*
+                documentbuilderfactory docfactory = documentbuilderfactory.newinstance();
+                documentbuilder docbuilder = docfactory.newdocumentbuilder();
+                document doc = docbuilder.newdocument();
+                element resultelement = doc.createelement("elemy");
+*//*
 
-                System.out.println("pp-----------------------------------");
-                System.out.println(pprint(domNode));
-                System.out.println("pp-----------------------------------");
+
+                final domresult result = new domresult();
+                // final domresult result = new domresult(resultelement);
+                t.transform(new staxsource(xer), result);
+                final node domnode = result.getnode();
+                system.out.println(domnode);
+                system.out.println(domnode.gettextcontent());
+
+                system.out.println("pp-----------------------------------");
+                system.out.println(pprint(domnode));
+                system.out.println("pp-----------------------------------");
             }
 //            for (int i = 0; i < 10; i++) {
-//                System.out.println(xer.getEventType());
-//                System.out.println(xer.getName());
-//                xer.nextTag();
+//                system.out.println(xer.geteventtype());
+//                system.out.println(xer.getname());
+//                xer.nexttag();
 //            }
 
-//            StreamSupport
-//                    .stream(new GLAWIIterable(t, xer).spliterator(), false)
+//            streamsupport
+//                    .stream(new glawiiterable(t, xer).spliterator(), false)
 //                    .limit(3)
 //                    .peek((n) -> {
-//                        System.out.println(n.getClass());
+//                        system.out.println(n.getclass());
 //                    })
-//                    .forEach(System.out::println);
+//                    .foreach(system.out::println);
         }
 
-//        System.out.println(fileSupplier.get());
+//        system.out.println(filesupplier.get());
 //
-//        jdbcTemplate.query("select * from foo", (ResultSet rs) -> {
-//            System.out.println(rs.getString(0));
-//        });
+//        jdbctemplate.query("select * from foo", (resultset rs) -> {
+//            system.out.println(rs.getstring(0));
+//  });
+*/
     }
 
     public static String pprint(Node node) throws TransformerException {
