@@ -2,7 +2,9 @@ package org.danidiaz.glawiimporter;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
+import javax.xml.parsers.DocumentBuilder;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.XMLEvent;
@@ -19,15 +21,18 @@ public class GLAWIIterable implements Iterable<Element> {
     private final String enclosingTag;
     private final String elementTag;
     private final Supplier<XMLEventReader> readerSupplier;
+    private final DocumentBuilder builder;
 
     public GLAWIIterable(Transformer t,
                          String enclosingTag,
                          String elementTag,
-                         Supplier<XMLEventReader> readerSupplier) {
+                         Supplier<XMLEventReader> readerSupplier,
+                         DocumentBuilder builder) {
         this.t = t;
         this.readerSupplier = readerSupplier;
         this.enclosingTag = enclosingTag;
         this.elementTag = elementTag;
+        this.builder = builder;
     }
 
     @Override
@@ -73,12 +78,14 @@ public class GLAWIIterable implements Iterable<Element> {
                 t.transform(new StAXSource(reader), result);
                 final Document document = (Document) result.getNode();
                 final Element element = (Element) document.getFirstChild();
-/*
-                element.setAttribute("name", elementTag);
-                element.setAttribute("tagName", elementTag);
-*/
+                final Document newDocument = builder.newDocument();
+                final Element newElement = newDocument.createElement(elementTag);
+                final NodeList childNodes = element.getChildNodes();
+                for (int i=0; i < childNodes.getLength(); i++) {
+                    newElement.appendChild(newDocument.importNode(childNodes.item(i),true));
+                }
                 state = ParseState.AFTER_PARSING;
-                return element;
+                return newElement;
             } catch (XMLStreamException | TransformerException e) {
                 throw new IllegalStateException(e);
             }
@@ -116,7 +123,7 @@ public class GLAWIIterable implements Iterable<Element> {
         }
     }
 
-    public enum ParseState {
+    private enum ParseState {
         INITIAL,
         READY_FOR_NEXT,
         AFTER_PARSING,

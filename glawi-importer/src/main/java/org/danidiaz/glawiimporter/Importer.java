@@ -44,13 +44,12 @@ public class Importer implements ApplicationRunner {
             final XMLEventReader xer = xif.createXMLEventReader(reader);
 
             final TransformerFactory tf = TransformerFactory.newInstance();
-            System.out.println(tf.getClass());
             final Transformer t = tf.newTransformer();
 
             final DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-            final DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+            final DocumentBuilder builder = docFactory.newDocumentBuilder();
 
-            final GLAWIIterable iterable = new GLAWIIterable(t, "items", "item", () -> xer);
+            final GLAWIIterable iterable = new GLAWIIterable(t, "items", "item", () -> xer, builder);
             for (Node node : iterable) {
                 System.out.println(pprint(node));
             }
