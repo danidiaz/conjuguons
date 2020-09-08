@@ -23,15 +23,15 @@ import java.util.function.Supplier;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-public class DictionaryEntries implements Iterable<Element> {
+public class Elements implements Iterable<Element> {
 
     private final String enclosingTag;
     private final String elementTag;
     private final Supplier<Reader> readerSupplier;
 
-    public DictionaryEntries(String enclosingTag,
-                             String elementTag,
-                             Supplier<Reader> readerSupplier) {
+    public Elements(String enclosingTag,
+                    String elementTag,
+                    Supplier<Reader> readerSupplier) {
         this.readerSupplier = readerSupplier;
         this.enclosingTag = enclosingTag;
         this.elementTag = elementTag;
@@ -98,6 +98,7 @@ public class DictionaryEntries implements Iterable<Element> {
                 transformer.transform(new StAXSource(reader), result);
                 final Document document = (Document) result.getNode();
                 final Element element = (Element) document.getFirstChild();
+                // https://stackoverflow.com/a/63767320/1364288
                 final Document newDocument = builder.newDocument();
                 final Element newElement = newDocument.createElement(elementTag);
                 final NodeList childNodes = element.getChildNodes();

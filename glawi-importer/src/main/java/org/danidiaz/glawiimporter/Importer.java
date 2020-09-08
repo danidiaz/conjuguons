@@ -36,8 +36,8 @@ public class Importer implements ApplicationRunner {
         System.out.println("I'm running!");
 
         try (var reader = new BufferedReader(new FileReader(fileSupplier.get(), StandardCharsets.UTF_8))) {
-            final DictionaryEntries entries = new DictionaryEntries("items", "item", () -> reader);
-            entries.stream().forEach((element) -> {
+            final Elements elements = new Elements("items", "item", () -> reader);
+            elements.stream().forEach((element) -> {
                 System.out.println(pprint(element));
             });
         }
