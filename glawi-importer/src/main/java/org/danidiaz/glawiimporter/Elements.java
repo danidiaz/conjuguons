@@ -23,6 +23,34 @@ import java.util.function.Supplier;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
+/**
+ * <p>An {@link Iterable} over the inner {@link Element}s of an XML file of the form:</p>
+ * <pre>{@code
+ * <enclosingTag>
+ *    <elementTag>stuff</elementTag>
+ *    <elementTag>stuff</elementTag>
+ *    <elementTag>stuff</elementTag>
+ * </enclosingTag>
+ * }</pre>
+ *
+ * <p>The aim is to build a {@link Stream} of {@link Element}s, so we can
+ * harness the stream API's capabilities for mapping and grouping when processing potentially
+ * huge XML files. </p>
+ *
+ * <p>Related Stack Overflow questions:</p>
+ * <ul>
+ * <li><a href="https://stackoverflow.com/questions/9379868/reading-a-big-xml-file-using-stax-and-dom ">Reading a big XML file using stax and dom</a></li>
+ * </ul>
+ * <ul>
+ * <li><a href="https://stackoverflow.com/questions/36617013/stream-xml-node-by-node ">Stream XML node by node</a></li>
+ * </ul>
+ * <ul>
+ * <li><a href="https://stackoverflow.com/questions/36717402/what-is-the-difference-between-xmlstreamreader-and-xmleventreader ">What is the difference between XMLStreamReader and XMLEventReader?</a></li>
+ * </ul>
+ * <ul>
+ * <li><a href="https://stackoverflow.com/questions/41803078/how-to-read-modify-fragments-of-xml-using-stax-in-java ">How to read modify fragments of XML using StAX in Java?</a></li>
+ * </ul>
+ */
 public class Elements implements Iterable<Element> {
 
     private final String enclosingTag;
