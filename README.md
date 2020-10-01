@@ -1,6 +1,14 @@
 # conjuguons
 Conjuguons! \kɔ̃.jy.ɡɔ̃\
 
+## run instructions
+
+### glawi-importer
+
+To run the importer:
+
+    mvn package ;  mvn spring-boot:run -D"spring-boot.run.arguments"="example.xml"
+
 ## resources
 
 [GLAWI](https://twitter.com/DiazCarrete/status/1164939319049633792). [documentation en ligne](http://redac.univ-tlse2.fr/lexicons/glawi/doc/index.html)
@@ -635,10 +643,4 @@ Observations:
 > In practice this normally means that a default clause is required; however, in the case of an enum switch expression that covers all known constants, a default clause is inserted by the compiler to indicate that the enum definition has changed between compile-time and runtime. Relying on this implicit default clause insertion makes for more robust code; now when code is recompiled, the compiler checks that all cases are explicitly handled. Had the developer inserted an explicit default clause (as is the case today) a possible error will have been hidden.
 
 [adopt node vs. import node (Java XML)](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node))
-
-## run instructions
-
-To run the importer:
-
-     mvn package ;  mvn spring-boot:run -D"spring-boot.run.arguments"="example.xml"
 
