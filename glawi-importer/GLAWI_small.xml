@@ -1,0 +1,1958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+GLAWI is a French machine readable dictionary developed by Franck Sajous, Nabil Hathout and Basilio Calderone at CLLE-ERSS lab (http://w3.erss.univ-tlse2.fr/).
+
+LICENSE
+
+GLAWI is based on Wiktionnaire (http://fr.wiktionary.org), the French edition of Wiktionary.
+It is released under the Creative Commons By-SA 3.0 license (Attribution - Partage dans les MÃÂªmes Conditions 3.0 non transposÃÂ©).
+
+The summary of this license is available at:
+http://creativecommons.org/licenses/by-sa/3.0/:
+The full text is available here:
+http://creativecommons.org/licenses/by-sa/3.0/legalcode
+
+GLAWI homepage is available at:
+http://redac.univ-tlse2.fr/lexicons/glawi.html
+
+A documentation is available at:
+http://redac.univ-tlse2.fr/lexicons/glawi/doc/index.html
+
+If you redistribute the resource, as is or modified, please enclose this current header.
+
+HOW TO CITE GLAWI
+
+Nabil Hahtout and Franck Sajous (2016). Wiktionnaire's Wikicode GLAWIfied: a Workable French Machine-Readable Dictionary. Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016), pp. 1369-1376. Portorož, Slovenia.
+
+@InProceedings{HathoutSajousLREC2016,
+  author = {Hathout, Nabil and Sajous, Franck},
+  title = {Wiktionnaire's {W}ikicode {GLAWIfied}: a {W}orkable {F}rench {M}achine-{R}eadable {D}ictionary},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  year = {2016},
+  month = {may},
+  date = {23-28},
+  address = {Portoro\v{z}, Slovenia},
+  editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+  publisher = {European Language Resources Association (ELRA)},
+  isbn = {978-2-9517408-9-1},
+  pages = {1369-1376},
+  language = {English}
+}
+
+Franck Sajous and Nabil Hathout (2015). GLAWI, a free XML-encoded Machine-Readable Dictionary built from the French Wiktionary. Proceedings of the eLex 2015 conference, pp. 405-426, Herstmonceux, England.
+
+@InProceedings{SajousHathout2015GLAWI,
+  author = {Sajous, Franck and Hathout, Nabil},
+  title = {{GLAWI}, a free {XML}-encoded {M}achine-{R}eadable {D}ictionary built from the {F}rench {W}iktionary},
+  booktitle = {Proceedings of the of the {eLex} 2015 conference},
+  year = {2015},
+  month = {august},
+  date = {11-13},
+  address = {Herstmonceux, UK},
+  language = {English},
+  pages = {405-426},
+}
+
+Theses articles are available here:
+http://redac.univ-tlse2.fr/lexicons/glawi.html
+-->
+<glawi lang="fr" dateDump="2015-12-26" endParsingDate="2016-05-18_15:47:02">
+  <article>
+    <title>aiguchi</title>
+    <pageId>471440</pageId>
+    <meta>
+      <category>u prononcés /u/ en français</category>
+      <category>ch prononcés /tʃ/ en français</category>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>du japonais <foreignWord lang="ja" translit="aïguchi">合口</foreignWord>.</xml>
+          <txt>du japonais 合口 aïguchi.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>aj.gu.tʃi</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="aiguchi" gracePOS="Ncms" prons="aj.gu.tʃi"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml>Monture pour une lame de <innerLink ref="tanto">tanto</innerLink> plus épurée que la monture standard buke-zukuri, où le couteau n'a pas de garde et où le <innerLink ref="sageo">sageo</innerLink> est inexistant dans la majorité des cas.</xml>
+              <txt>Monture pour une lame de tanto plus épurée que la monture standard buke-zukuri, où le couteau n'a pas de garde et où le sageo est inexistant dans la majorité des cas.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="sem" value="métonymie"/>
+                <label type="domain" value="armes blanches"/>
+              </labels>
+              <xml><innerLink ref="tanto#fr">Tanto</innerLink> monté en aïguchi.</xml>
+              <txt>Tanto monté en aïguchi.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>aikuchi</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>démerde</title>
+    <pageId>471482</pageId>
+    <meta>
+      <category>Termes populaires en français</category>
+      <category>Argot en français</category>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <labels>
+            <label type="other" value="déverbal sans suffixe"/>
+          </labels>
+          <xml>dans le sens de « <innerLink ref="ôter">ôter</innerLink> d'une <innerLink ref="situation">situation</innerLink> <innerLink ref="délicat">délicat</innerLink>e ».</xml>
+          <txt>dans le sens de « ôter d'une situation délicate ».</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>de.mɛʁd</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="démerde" gracePOS="Ncfs" prons="de.mɛʁd"/>
+          <inflection form="démerdes" gracePOS="Ncfp" prons="de.mɛʁd"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="attitudinal" value="populaire"/>
+              </labels>
+              <xml><innerLink ref="ensemble">Ensemble</innerLink> de <innerLink ref="savoir-faire">savoir-faire</innerLink> et d'<innerLink ref="astuce">astuce</innerLink>s permettant de se <innerLink ref="tirer">tirer</innerLink> de <innerLink ref="situation">situation</innerLink>s <innerLink ref="délicate">délicate</innerLink>s.</xml>
+              <txt>Ensemble de savoir-faire et d'astuces permettant de se tirer de situations délicates.</txt>
+            </gloss>
+            <example>
+              <xml><i>C'est la <b>démerde</b> individuelle, tout le monde fait ses petites expériences sans rien dire à personne. Ça marche ou ça marche pas, si ça marche, tu continues.</i> (Geneviève Delbos et Paul Jorion, <i>La Transmission des savoirs</i>, Maison des sciences de l'homme, 1984, p. 10)</xml>
+              <txt>C'est la démerde individuelle, tout le monde fait ses petites expériences sans rien dire à personne. Ça marche ou ça marche pas, si ça marche, tu continues. (Geneviève Delbos et Paul Jorion, La Transmission des savoirs, Maison des sciences de l'homme, 1984, p. 10)</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="sem" value="en particulier"/>
+                <label type="attitudinal" value="argot"/>
+              </labels>
+              <xml><innerLink ref="utilisé">Utilisé</innerLink> pour former des <innerLink ref="surnom">surnom</innerLink>s dans le <innerLink ref="milieu">milieu</innerLink>.</xml>
+              <txt>Utilisé pour former des surnoms dans le milieu.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Jojo-la-<b>démerde</b>.</i>
+              </xml>
+              <txt>Jojo-la-démerde.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="sem" value="en particulier"/>
+                <label type="attitudinal" value="populaire"/>
+              </labels>
+              <xml>Ensemble d'<innerLink ref="astuce">astuce</innerLink>s et <innerLink ref="combines">combines</innerLink> en <innerLink ref="marge">marge</innerLink> de la <innerLink ref="loi">loi</innerLink>.</xml>
+              <txt>Ensemble d'astuces et combines en marge de la loi.</txt>
+            </gloss>
+            <example>
+              <xml><i>Chez lui comme chez nous, il n'y a que la <b>démerde</b> et la combine qui soient vraiment efficaces.</i> (Jean-Loup Izambert, <i>Le Crédit agricole hors la loi ?</i>, 2001)</xml>
+              <txt>Chez lui comme chez nous, il n'y a que la démerde et la combine qui soient vraiment efficaces. (Jean-Loup Izambert, Le Crédit agricole hors la loi ?, 2001)</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">article quinze</item>
+          <item type="synonym">débrouille</item>
+          <item type="synonym">dépatouillage</item>
+          <item type="synonym">système D</item>
+        </subsection>
+      </pos>
+      <pos type="verbe" lemma="0" locution="0">
+        <pronunciations>
+          <pron>de.mɛʁd</pron>
+        </pronunciations>
+        <inflectionInfos>
+          <inflectedForm gracePOS="Vmip1s-" lemma="démerder"/>
+          <inflectedForm gracePOS="Vmip3s-" lemma="démerder"/>
+          <inflectedForm gracePOS="Vmsp1s-" lemma="démerder"/>
+          <inflectedForm gracePOS="Vmsp3s-" lemma="démerder"/>
+          <inflectedForm gracePOS="Vmmp2s-" lemma="démerder"/>
+        </inflectionInfos>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><i>Première personne du singulier de l'indicatif présent du verbe</i><innerLink ref="démerder">démerder</innerLink>.</xml>
+              <txt>Première personne du singulier de l'indicatif présent du verbe démerder.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <xml><i>Troisième personne du singulier de l'indicatif présent du verbe</i><innerLink ref="démerder">démerder</innerLink>.</xml>
+              <txt>Troisième personne du singulier de l'indicatif présent du verbe démerder.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <xml><i>Première personne du singulier du subjonctif présent du verbe</i><innerLink ref="démerder">démerder</innerLink>.</xml>
+              <txt>Première personne du singulier du subjonctif présent du verbe démerder.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <xml><i>Troisième personne du singulier du subjonctif présent du verbe</i><innerLink ref="démerder">démerder</innerLink>.</xml>
+              <txt>Troisième personne du singulier du subjonctif présent du verbe démerder.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <xml><i>Deuxième personne du singulier de l'impératif du verbe</i><innerLink ref="démerder">démerder</innerLink>.</xml>
+              <txt>Deuxième personne du singulier de l'impératif du verbe démerder.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="paronyms">
+          <item>de</item>
+          <item>merde</item>
+        </subsection>
+      </pos>
+      <section type="homophones">
+        <item>démerdent</item>
+        <item>démerdes</item>
+      </section>
+    </text>
+  </article>
+  <article>
+    <title>requisit</title>
+    <pageId>471550</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>emprunt du latin des philosophes <i><innerLink ref="requisitum">requisitum</innerLink></i> du verbe <i><innerLink ref="requiere">requiere</innerLink></i>, « <innerLink ref="rechercher">rechercher</innerLink> ».</xml>
+          <txt>emprunt du latin des philosophes requisitum du verbe requiere, « rechercher ».</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>ʁe.kɥi.zit</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="requisit" gracePOS="Ncms" prons="ʁe.kɥi.zit"/>
+          <inflection form="requisits" gracePOS="Ncmp" prons="ʁe.kɥi.zit"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="hypothèse">Hypothèse</innerLink>, <innerLink ref="présupposé">présupposé</innerLink>, chose <innerLink ref="nécessaire">nécessaire</innerLink> pour une <innerLink ref="fin">fin</innerLink> donnée.</xml>
+              <txt>Hypothèse, présupposé, chose nécessaire pour une fin donnée.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Mais le principe du déterminisme, qui est le <b><i>requisit</i></b> de toute science expérimentale, est bien la « foi » du psychanalyste […].</i>
+              </xml>
+              <txt>Mais le principe du déterminisme, qui est le requisit de toute science expérimentale, est bien la « foi » du psychanalyste […].</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>réquisit</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>futution</title>
+    <pageId>472832</pageId>
+    <meta/>
+    <text>
+      <pronunciations>
+        <pron>fy.ty.sjɔ̃</pron>
+      </pronunciations>
+      <etymology>
+        <etym>
+          <xml>du <innerLink ref="latin">latin</innerLink> <i><innerLink ref="fututio">fututio</innerLink></i>, <i><innerLink ref="fututionis">fututionis</innerLink></i> (<innerLink ref="rapport sexuel">rapport sexuel</innerLink>), dérivé de <i><innerLink ref="futuere">futuere</innerLink></i> (« <innerLink ref="posséder">posséder</innerLink> <innerLink ref="charnellement">charnellement</innerLink>, <innerLink ref="foutre">foutre</innerLink> »).</xml>
+          <txt>du latin fututio, fututionis (rapport sexuel), dérivé de futuere (« posséder charnellement, foutre »).</txt>
+        </etym>
+        <etym>
+          <xml><innerLink ref="néologisme">néologisme</innerLink> du xixe siècle, probablement formé par <linkWikiProject target="alcide bonneau">alcide bonneau</linkWikiProject> dans son <i>manuel d'érotologie classique</i> en 1882, traduction du <i>de figuris veneris</i> de friedrich-karl forberg. il est aussi utilisé par sade dans les infortunes de la vertu, domaine français, éd.10/18, introduction de gilbert lely.</xml>
+          <txt>néologisme du xixe siècle, probablement formé par alcide bonneau dans son manuel d'érotologie classique en 1882, traduction du de figuris veneris de friedrich-karl forberg. il est aussi utilisé par sade dans les infortunes de la vertu, domaine français, éd.10/18, introduction de gilbert lely.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>fy.ty.sjɔ̃</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="futution" gracePOS="Ncfs" prons="fy.ty.sjɔ̃"/>
+          <inflection form="fututions" gracePOS="Ncfp" prons="fy.ty.sjɔ̃"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diafrequential" value="rare"/>
+                <label type="other" value="érotisme"/>
+              </labels>
+              <xml><innerLink ref="coït">Coït</innerLink><innerLink ref="vaginal">vaginal</innerLink>.</xml>
+              <txt>Coït vaginal.</txt>
+            </gloss>
+            <example>
+              <xml><i>Ils étaient ces années-là extrêmement foutatifs. À </i>Cameo<i> il y avait des <b>fututions</b> dans les loges ! Des mates au balcon du </i>Capitol<i>. Sous la rayonne, les lycéennes du jeudi se laissaient pétrir les friolets.</i> (<innerLink ref="w:Philippe Sollers">Philippe Sollers</innerLink>, dans Centre national des lettres, <i>L'Infini: littérature, philosophie, art, science, politique</i>, Denoël, 1983, p. 152)</xml>
+              <txt>Ils étaient ces années-là extrêmement foutatifs. À Cameo il y avait des fututions dans les loges ! Des mates au balcon du Capitol. Sous la rayonne, les lycéennes du jeudi se laissaient pétrir les friolets. (Philippe Sollers, dans Centre national des lettres, L'Infini: littérature, philosophie, art, science, politique, Denoël, 1983, p. 152)</txt>
+            </example>
+            <example>
+              <xml><i>Stupre, <b>futution</b> sur les places publiques ; cris, viol, fureur dans les loges de l'Opéra.</i> (Gilbert Lély, Éditions de la Différence, 1977)</xml>
+              <txt>Stupre, futution sur les places publiques ; cris, viol, fureur dans les loges de l'Opéra. (Gilbert Lély, Éditions de la Différence, 1977)</txt>
+            </example>
+            <example>
+              <xml><i>Les travaux pratiques étaient nombreux et variés. Les techniques de la <b>futution</b>, de la fellation, du cunnilingus, de la pédication et d'autres activités charmantes y étaient détaillées avec art.</i> (Sarane Alexandrian, <i>Les terres fortunées du songe</i>, Galilée, 1979, p. 259)</xml>
+              <txt>Les travaux pratiques étaient nombreux et variés. Les techniques de la futution, de la fellation, du cunnilingus, de la pédication et d'autres activités charmantes y étaient détaillées avec art. (Sarane Alexandrian, Les terres fortunées du songe, Galilée, 1979, p. 259)</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="morpho">
+          <item type="related">foutre</item>
+          <item type="related">foutage</item>
+        </subsection>
+        <translations>
+          <trans lang="de">Futution</trans>
+          <trans lang="la">fututio</trans>
+        </translations>
+      </pos>
+      <section type="homophones">
+        <item>fututions</item>
+      </section>
+    </text>
+  </article>
+  <article>
+    <title>fututions</title>
+    <pageId>472833</pageId>
+    <meta/>
+    <text>
+      <pronunciations>
+        <pron>fy.ty.sjɔ̃</pron>
+      </pronunciations>
+      <pos type="nom" lemma="0" locution="0" number="p" gender="f">
+        <pronunciations>
+          <pron>fy.ty.sjɔ̃</pron>
+        </pronunciations>
+        <inflectionInfos>
+          <inflectedForm gracePOS="Ncfp" lemma="futution"/>
+        </inflectionInfos>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><i>Pluriel du nom</i><innerLink ref="futution">futution</innerLink>.</xml>
+              <txt>Pluriel du nom futution.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>pédication</title>
+    <pageId>472834</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>du latin <foreignWord lang="la">paedicatio</foreignWord> <cf value="pédiquer|-ation" lang="fr"/>.</xml>
+          <txt>du latin paedicatio  voir pédiquer et -ation.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>pe.di.ka.sjɔ̃</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="pédication" gracePOS="Ncfs" prons="pe.di.ka.sjɔ̃"/>
+          <inflection form="pédications" gracePOS="Ncfp" prons="pe.di.ka.sjɔ̃"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diafrequential" value="rare"/>
+                <label type="domain" value="sexualité"/>
+              </labels>
+              <xml><innerLink ref="coït#fr">Coït</innerLink><innerLink ref="anal">anal</innerLink>.</xml>
+              <txt>Coït anal.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>On y enseigne aux jeunes filles les avantages de la <b>pédication</b> : pas de soupçons, pas d'enfants.</i>
+              </xml>
+              <txt>On y enseigne aux jeunes filles les avantages de la pédication : pas de soupçons, pas d'enfants.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">enculade</item>
+          <item type="synonym">enculage</item>
+          <item type="synonym">sodomie</item>
+        </subsection>
+        <subsection type="relatedVocabulary">
+          <item>bougrerie</item>
+          <item>homosexualité</item>
+          <item>inversion</item>
+          <item>pédérastie</item>
+          <item>uranisme</item>
+        </subsection>
+        <translations>
+          <trans lang="en">pedication</trans>
+          <trans lang="hbo">כרכוש</trans>
+          <trans lang="hbo">חלחול</trans>
+          <trans lang="la">paedicatio</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>franco-français</title>
+    <pageId>472839</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>
+            <cf value="franco-|français"/>
+          </xml>
+          <txt>voir franco- et français</txt>
+        </etym>
+      </etymology>
+      <pos type="adjectif" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>fʁã.ko.fʁã.sɛ</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="franco-français" gracePOS="Afpms" prons="fʁã.ko.fʁã.sɛ"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml>Fait entre <innerLink ref="Français">Français</innerLink>.</xml>
+              <txt>Fait entre Français.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>M. Sarkozy souhaiterait un groupe nucléaire <b>franco-français</b>, sans l'allemand Siemens.</i>
+              </xml>
+              <txt>M. Sarkozy souhaiterait un groupe nucléaire franco-français, sans l'allemand Siemens.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>La présence de ce tandem <b>franco-français</b> à la tête de la plus importante filiale d'EADS est compensée par la nomination de managers allemands.</i>
+              </xml>
+              <txt>La présence de ce tandem franco-français à la tête de la plus importante filiale d'EADS est compensée par la nomination de managers allemands.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <xml>Réalisé en <innerLink ref="France">France</innerLink> ou par des <innerLink ref="Français">Français</innerLink> à la destination exclusive d'un public <innerLink ref="français">français</innerLink>.</xml>
+              <txt>Réalisé en France ou par des Français à la destination exclusive d'un public français.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Si vous consultez un dictionnaire <b>franco-français</b>, vous ne trouverez probablement pas ce sens à viaduc.</i>
+              </xml>
+              <txt>Si vous consultez un dictionnaire franco-français, vous ne trouverez probablement pas ce sens à viaduc.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="attitudinal" value="péjoratif"/>
+              </labels>
+              <xml><innerLink ref="typiquement">Typiquement</innerLink><innerLink ref="français">français</innerLink>, <innerLink ref="franchouillard">franchouillard</innerLink>.</xml>
+              <txt>Typiquement français, franchouillard.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Les débats <b>franco-français</b> sur l'opportunité de réformer l'orthographe.</i>
+              </xml>
+              <txt>Les débats franco-français sur l'opportunité de réformer l'orthographe.</txt>
+            </example>
+          </definition>
+        </definitions>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>cuisiniste</title>
+    <pageId>472840</pageId>
+    <meta>
+      <category>Métiers du secteur tertiaire en français</category>
+      <category>Mots en français suffixés avec -iste</category>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>de « <innerLink ref="cuisine">cuisine</innerLink> » avec le suffixe <innerLink ref="-iste">-iste</innerLink>. ce <innerLink ref="néologisme">néologisme</innerLink> été inventé par le publicitaire jacques boussigué et popularisé par le journal professionnel <i>l'officiel des cuisinistes</i> à partir de 1977.</xml>
+          <txt>de « cuisine » avec le suffixe -iste. ce néologisme été inventé par le publicitaire jacques boussigué et popularisé par le journal professionnel l'officiel des cuisinistes à partir de 1977.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="e" number="s">
+        <pronunciations>
+          <pron>kɥi.zi.nist</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="cuisiniste" gracePOS="Ncms" prons="kɥi.zi.nist"/>
+          <inflection form="cuisinistes" gracePOS="Ncfp" prons="kɥi.zi.nist"/>
+          <inflection form="cuisinistes" gracePOS="Ncmp" prons="kɥi.zi.nist"/>
+          <inflection form="cuisiniste" gracePOS="Ncfs" prons="kɥi.zi.nist"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="concepteur">Concepteur</innerLink> et <innerLink ref="aménageur">aménageur</innerLink> de <innerLink ref="cuisine">cuisine</innerLink>s.</xml>
+              <txt>Concepteur et aménageur de cuisines.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Le <b>cuisiniste</b> est un conseiller qui reçoit ses clients et les assiste dans leurs choix pour l'installation de leur cuisine.</i>
+              </xml>
+              <txt>Le cuisiniste est un conseiller qui reçoit ses clients et les assiste dans leurs choix pour l'installation de leur cuisine.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="morpho">
+          <item type="related">cuisine</item>
+          <item type="related">cuisiner</item>
+          <item type="related">cuisinier</item>
+          <item type="related">cuisinière</item>
+        </subsection>
+        <translations/>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>pentu</title>
+    <pageId>472937</pageId>
+    <meta>
+      <reference>TLFi</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml><century>xx</century> adjectif <cf value="pente|-u" lang="fr"/>. terme d'origine assez récente, auparavant, on trouve <i><innerLink ref="pentueux">pentueux</innerLink></i>.</xml>
+          <txt>adjectif voir pente et -u. terme d'origine assez récente, auparavant, on trouve pentueux.</txt>
+        </etym>
+      </etymology>
+      <pos type="adjectif" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>pãty</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="pentu" gracePOS="Afpms" prons="pãty"/>
+          <inflection form="pentus" gracePOS="Afpmp" prons="pãty"/>
+          <inflection form="pentue" gracePOS="Afpfs" prons="pãty"/>
+          <inflection form="pentues" gracePOS="Afpfp" prons="pãty"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml>Qui est en <innerLink ref="pente">pente</innerLink>, <innerLink ref="grimpant">grimpant</innerLink>.</xml>
+              <txt>Qui est en pente, grimpant.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>C'est un chemin <b>pentu</b>.</i>
+              </xml>
+              <txt>C'est un chemin pentu.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Les toits <b>pentus</b> des demeures alpines</i>
+              </xml>
+              <txt>Les toits pentus des demeures alpines</txt>
+            </example>
+          </definition>
+        </definitions>
+        <translations>
+          <trans lang="nl">hellend</trans>
+        </translations>
+      </pos>
+      <section type="anagrammes">
+        <item>pétun</item>
+        <item>puent</item>
+      </section>
+    </text>
+  </article>
+  <article>
+    <title>empuse</title>
+    <pageId>472976</pageId>
+    <meta>
+      <category>Insectes en français</category>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>du grec ancien <foreignWord lang="grc" translit="empousa">εμπουσα</foreignWord>.</xml>
+          <txt>du grec ancien εμπουσα empousa.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>ã.pyz</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="empuse" gracePOS="Ncfs" prons="ã.pyz"/>
+          <inflection form="empuses" gracePOS="Ncfp" prons="ã.pyz"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="zoologie"/>
+              </labels>
+              <xml><innerLink ref="insecte">Insecte</innerLink> marcheur de l'ordre des <innerLink ref="mantoptère">mantoptère</innerLink>s comme la <innerLink ref="mante">mante</innerLink>.</xml>
+              <txt>Insecte marcheur de l'ordre des mantoptères comme la mante.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="botanique"/>
+              </labels>
+              <xml>Moisissure parasite de certains insectes.</xml>
+              <txt>Moisissure parasite de certains insectes.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="mythologie"/>
+              </labels>
+              <xml>Démon femelle, <innerLink ref="spectre">spectre</innerLink> <innerLink ref="incarnation">incarnation</innerLink> d'<innerLink ref="Hécate">Hécate</innerLink>.</xml>
+              <txt>Démon femelle, spectre incarnation d'Hécate.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>empousa</item>
+          <item>empusa</item>
+        </subsection>
+        <translations>
+          <trans lang="conv">Empusa</trans>
+          <trans lang="en">empusa</trans>
+          <trans lang="en">empusa</trans>
+          <trans lang="en">empuse</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>nouvelle cuisine</title>
+    <pageId>474621</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>composé de l'adjectif <i><innerLink ref="nouveau">nouveau</innerLink></i> et du nom <i><innerLink ref="cuisine">cuisine</innerLink></i>.</xml>
+          <txt>composé de l'adjectif nouveau et du nom cuisine.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="1" gender="f" number="s">
+        <pronunciations>
+          <pron>nu.vɛl kɥi.zin</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="nouvelle cuisine" gracePOS="Ncfs" prons="nu.vɛl kɥi.zin"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="mouvement">Mouvement</innerLink><innerLink ref="gastronomique">gastronomique</innerLink> suscité en 1972 par les critiques Henri Gault et Christian Millau, <innerLink ref="privilégiant">privilégiant</innerLink> la <innerLink ref="présentation">présentation</innerLink> de la <innerLink ref="nourriture">nourriture</innerLink> et l'aspect <innerLink ref="visuel">visuel</innerLink> des <innerLink ref="aliment">aliment</innerLink>s au lieu de les <innerLink ref="surcharger">surcharger</innerLink> de <innerLink ref="garniture">garniture</innerLink>s qui <innerLink ref="recouvrent">recouvrent</innerLink> des <innerLink ref="comestible">comestible</innerLink>s <innerLink ref="surcuit">surcuit</innerLink>s.</xml>
+              <txt>Mouvement gastronomique suscité en 1972 par les critiques Henri Gault et Christian Millau, privilégiant la présentation de la nourriture et l'aspect visuel des aliments au lieu de les surcharger de garnitures qui recouvrent des comestibles surcuits.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>La <b>nouvelle cuisine</b> française des années 70-80 s'est bien souvent faite chez les collectionneurs de traités de cuisine qui, cachant leurs sources, reprenaient des préparations médiévales plus étonnantes que l'on voudrait bien le croire.</i>
+              </xml>
+              <txt>La nouvelle cuisine française des années 70-80 s'est bien souvent faite chez les collectionneurs de traités de cuisine qui, cachant leurs sources, reprenaient des préparations médiévales plus étonnantes que l'on voudrait bien le croire.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <translations>
+          <trans lang="de">Nouvelle Cuisine</trans>
+          <trans lang="en">nouvelle cuisine</trans>
+          <trans lang="ja">ヌーベル・キュイジーヌ</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>aulacode</title>
+    <pageId>475227</pageId>
+    <meta>
+      <category>Rongeurs en français</category>
+      <reference>Meyer|article=aulacodes</reference>
+    </meta>
+    <text>
+      <pos type="nom" lemma="1" locution="0" number="s">
+        <pronunciations>
+          <pron>o.kɔ.lad</pron>
+        </pronunciations>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="zoologie"/>
+              </labels>
+              <xml><innerLink ref="mammifère">Mammifère</innerLink> rongeur du genre <i><innerLink ref="Thryonomys">Thryonomys</innerLink></i>, de la taille d'un grand lapin ou d'un chat, apparenté au porc-épic et au cochon d'Inde, à grosse tête et petites oreilles rondes, qui habite l'Afrique centrale.</xml>
+              <txt>Mammifère rongeur du genre Thryonomys, de la taille d'un grand lapin ou d'un chat, apparenté au porc-épic et au cochon d'Inde, à grosse tête et petites oreilles rondes, qui habite l'Afrique centrale.</txt>
+            </gloss>
+            <example>
+              <xml><i> Parmi les <innerLink ref="rongeur">rongeur</innerLink>s consommés en Afrique, l' <b>aulacode</b> est sans doute l'espèce préférée... On connaît 2 espèces de ce rongeur : le grand <b>aulacode</b>  (</i>Thryonomys swinderianus<i>) et le petit <b>aulacode</b> (</i>T. gregorianus<i>). </i></xml>
+              <txt>Parmi les rongeurs consommés en Afrique, l' aulacode est sans doute l'espèce préférée... On connaît 2 espèces de ce rongeur : le grand aulacode  (Thryonomys swinderianus) et le petit aulacode (T. gregorianus).</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">rat des roseaux</item>
+          <item type="synonym">rat des bambous</item>
+          <item type="hyperonym">hystricognathe</item>
+          <item type="hyperonym">thryonomyidé</item>
+        </subsection>
+        <translations>
+          <trans lang="conv">Thryonomys</trans>
+          <trans lang="en">cane rat</trans>
+          <trans lang="en">ground-hog</trans>
+          <trans lang="en">grass cutter</trans>
+          <trans lang="en">cutting grass</trans>
+          <trans lang="hke">ngetsi</trans>
+          <trans lang="ln">nsímbiliki</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>retomber en enfance</title>
+    <pageId>475415</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml><cf value="retomber|en|enfance"/>.</xml>
+          <txt>voir retomber, en et enfance.</txt>
+        </etym>
+      </etymology>
+      <pos type="verbe" lemma="1" locution="1">
+        <pronunciations>
+          <pron>ʁə.tɔ̃.be ã.n‿ã.fãs</pron>
+        </pronunciations>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="se comporter">Se comporter</innerLink><innerLink ref="inconsciemment">inconsciemment</innerLink> comme un <innerLink ref="enfant">enfant</innerLink>, un <innerLink ref="adolescent">adolescent</innerLink>.</xml>
+              <txt>Se comporter inconsciemment comme un enfant, un adolescent.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="manifester">Manifester</innerLink> une forme de <innerLink ref="sénilité">sénilité</innerLink> où les <innerLink ref="faculté mentale">facultés mentales</innerLink> font penser à celles d'un <innerLink ref="enfant">enfant</innerLink>.</xml>
+              <txt>Manifester une forme de sénilité où les facultés mentales font penser à celles d'un enfant.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>En raison de son grand âge, Papinou <b>retombait en enfance</b> au point de paraître gâteux.</i>
+              </xml>
+              <txt>En raison de son grand âge, Papinou retombait en enfance au point de paraître gâteux.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <translations>
+          <trans lang="de">kindisch werden</trans>
+          <trans lang="en">lapse into second childhood</trans>
+          <trans lang="bg">вдетинявам</trans>
+          <trans lang="it">rimbambire</trans>
+          <trans lang="wa">refanti</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>ectoparasite</title>
+    <pageId>475489</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>composé de <i><innerLink ref="ecto-">ecto-</innerLink></i> (« au dehors ») et de <i><innerLink ref="parasite">parasite</innerLink></i>.</xml>
+          <txt>composé de ecto- (« au dehors ») et de parasite.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>ɛkto.pa.ʁa.zit</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="ectoparasite" gracePOS="Ncms" prons="ɛkto.pa.ʁa.zit"/>
+          <inflection form="ectoparasites" gracePOS="Ncmp" prons="ɛkto.pa.ʁa.zit"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="parasite">Parasite</innerLink><innerLink ref="externe">externe</innerLink>, c'est-à-dire un parasite qui vit sur la <innerLink ref="surface">surface</innerLink> corporelle d'un <innerLink ref="être vivant">être vivant</innerLink>.</xml>
+              <txt>Parasite externe, c'est-à-dire un parasite qui vit sur la surface corporelle d'un être vivant.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Le minacide semble également être intéressant contre les vecteurs et les <b>ectoparasites</b> du bétail.</i>
+              </xml>
+              <txt>Le minacide semble également être intéressant contre les vecteurs et les ectoparasites du bétail.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Parmi les <b>ectoparasites</b> on mentionne les poux, les puces, etc.</i>
+              </xml>
+              <txt>Parmi les ectoparasites on mentionne les poux, les puces, etc.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="antonym">endoparasite</item>
+          <item type="hyponym">gale</item>
+          <item type="hyponym">pou</item>
+          <item type="hyponym">puce</item>
+          <item type="hyponym">tique</item>
+        </subsection>
+        <subsection type="morpho">
+          <item type="related">cleptoparasite</item>
+          <item type="related">cleptoparasitisme</item>
+          <item type="related">endoparasite</item>
+          <item type="related">hémiparasite</item>
+          <item type="related">parasitaire</item>
+          <item type="related">parasite</item>
+          <item type="related">parasité</item>
+          <item type="related">parasiter</item>
+          <item type="related">parasitisme</item>
+          <item type="related">parasitoïde</item>
+          <item type="related">parasitologie</item>
+          <item type="related">parasitologue</item>
+          <item type="related">parasitose</item>
+          <item type="related">pseudoparasite</item>
+        </subsection>
+        <translations>
+          <trans lang="de">Ektoparasit</trans>
+          <trans lang="it">ectoparassita</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>exhibitionnisme</title>
+    <pageId>475584</pageId>
+    <meta>
+      <category>Mots en français suffixés avec -isme</category>
+      <category>Crimes et délits en français</category>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>de <i><innerLink ref="exhibition">exhibition</innerLink></i> avec le suffixe <i><innerLink ref="-isme">-isme</innerLink></i>.</xml>
+          <txt>de exhibition avec le suffixe -isme.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>ɛg.zi.bi.sjɔ.nism</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="exhibitionnisme" gracePOS="Ncms" prons="ɛg.zi.bi.sjɔ.nism"/>
+          <inflection form="exhibitionnismes" gracePOS="Ncmp" prons="ɛg.zi.bi.sjɔ.nism"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="pulsion">Pulsion</innerLink> qui consiste à <innerLink ref="exhiber">exhiber</innerLink>, en <innerLink ref="public">public</innerLink>, les parties <innerLink ref="intime">intime</innerLink>s de son <innerLink ref="anatomie">anatomie</innerLink> (<innerLink ref="fesse">fesse</innerLink>s ou parties <innerLink ref="génital">génital</innerLink>es par exemple).</xml>
+              <txt>Pulsion qui consiste à exhiber, en public, les parties intimes de son anatomie (fesses ou parties génitales par exemple).</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Il a été arrêté pour <b>exhibitionnisme</b>, il se baladait avec son machin à l'air.</i>
+              </xml>
+              <txt>Il a été arrêté pour exhibitionnisme, il se baladait avec son machin à l'air.</txt>
+            </example>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="sem" value="par extension"/>
+              </labels>
+              <xml>Dans un contexte non <innerLink ref="sexuel">sexuel</innerLink>, <innerLink ref="complaisance">complaisance</innerLink> à montrer des <innerLink ref="comportement">comportement</innerLink>s généralement considérés comme <innerLink ref="intime">intime</innerLink>s ou <innerLink ref="secret">secret</innerLink>s.</xml>
+              <txt>Dans un contexte non sexuel, complaisance à montrer des comportements généralement considérés comme intimes ou secrets.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>L'<b>exhibitionnisme</b> de la télévision.</i>
+              </xml>
+              <txt>L'exhibitionnisme de la télévision.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>S'il est une pathologie qui rassemble les tueurs en série au-delà de leurs techniques et de leurs mobiles, c'est bien l'<b>exhibitionnisme</b>.  </i>
+              </xml>
+              <txt>S'il est une pathologie qui rassemble les tueurs en série au-delà de leurs techniques et de leurs mobiles, c'est bien l'exhibitionnisme.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="relatedVocabulary">
+          <item>voyeurisme</item>
+        </subsection>
+        <subsection type="morpho">
+          <item type="related">exhiber</item>
+          <item type="related">exhibition</item>
+          <item type="related">exhibitionniste</item>
+        </subsection>
+        <translations>
+          <trans lang="gsw">Exhibitionismus</trans>
+          <trans lang="de">Exhibitionismus</trans>
+          <trans lang="en">exhibitionism</trans>
+          <trans lang="ar">استعرائية</trans>
+          <trans lang="eu">erakuskeria</trans>
+          <trans lang="bn">প্রদর্শনকামনা</trans>
+          <trans lang="be">эксгібіцыянізм</trans>
+          <trans lang="bs">egzibicionizam</trans>
+          <trans lang="bg">ексхибиционизъм</trans>
+          <trans lang="ca">exhibicionisme</trans>
+          <trans lang="zh">露体癖</trans>
+          <trans lang="ko">노출증</trans>
+          <trans lang="hr">egzibicionizam</trans>
+          <trans lang="da">ekshibitionisme</trans>
+          <trans lang="es">exhibicionismo</trans>
+          <trans lang="eo">elmontremo</trans>
+          <trans lang="et">ekshibitsionism</trans>
+          <trans lang="fi">ekshibitionismi</trans>
+          <trans lang="gl">exhibicionismo</trans>
+          <trans lang="ka">ექსჰიბიციონიზმი</trans>
+          <trans lang="el">επιδειξιμανία</trans>
+          <trans lang="he">אקסהיביציוניזם</trans>
+          <trans lang="hu">exhibicionizmus</trans>
+          <trans lang="is">strípihneigð</trans>
+          <trans lang="it">esibizionismo</trans>
+          <trans lang="ja">露出狂</trans>
+          <trans lang="lt">ekshibicionizmas</trans>
+          <trans lang="nl">exhibitionisme</trans>
+          <trans lang="oc">exibicionisme</trans>
+          <trans lang="fa">بدن‌نمایی</trans>
+          <trans lang="pl">ekshibicjonizm</trans>
+          <trans lang="pt">exibicionismo</trans>
+          <trans lang="ro">exhibiționism</trans>
+          <trans lang="ru">эксгибиционизм</trans>
+          <trans lang="sk">exhibicionizmus</trans>
+          <trans lang="cs">exhibicionismus</trans>
+          <trans lang="tr">teşhircilik</trans>
+          <trans lang="uk">ексгібіціонізм</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>voyeurisme</title>
+    <pageId>475675</pageId>
+    <meta>
+      <category>Mots en français suffixés avec -isme</category>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml><cf value="voyeur|-isme"/>.</xml>
+          <txt>voir voyeur et -isme.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>vwa.jœ.ʁism</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="voyeurisme" gracePOS="Ncms" prons="vwa.jœ.ʁism"/>
+          <inflection form="voyeurismes" gracePOS="Ncmp" prons="vwa.jœ.ʁism"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="pulsion">Pulsion</innerLink> qui consiste à <innerLink ref="observer">observer</innerLink> l'<innerLink ref="intimité">intimité</innerLink> ou la <innerLink ref="nudité">nudité</innerLink> d'une ou plusieurs personnes et à y éprouver une <innerLink ref="jouissance">jouissance</innerLink>, une <innerLink ref="excitation">excitation</innerLink>.</xml>
+              <txt>Pulsion qui consiste à observer l'intimité ou la nudité d'une ou plusieurs personnes et à y éprouver une jouissance, une excitation.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="sem" value="par extension"/>
+              </labels>
+              <xml>Dans un contexte non <innerLink ref="sexuel">sexuel</innerLink>, <innerLink ref="complaisance">complaisance</innerLink> à <innerLink ref="regarder">regarder</innerLink> des <innerLink ref="comportement">comportement</innerLink>s généralement considérés comme <innerLink ref="intime">intime</innerLink>s ou <innerLink ref="secret">secret</innerLink>s.</xml>
+              <txt>Dans un contexte non sexuel, complaisance à regarder des comportements généralement considérés comme intimes ou secrets.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i> Le <b>voyeurisme</b> du téléspectateur.</i>
+              </xml>
+              <txt>Le voyeurisme du téléspectateur.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="antonym">exhibitionnisme</item>
+        </subsection>
+        <subsection type="morpho">
+          <item type="related">voir</item>
+          <item type="related">voyeur</item>
+          <item type="related">voyeuriste</item>
+        </subsection>
+        <translations>
+          <trans lang="en">voyeurism</trans>
+          <trans lang="eo">rigardismo</trans>
+          <trans lang="el">ηδονοβλεψία</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>sassanide</title>
+    <pageId>475764</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>de « sassan », nom du fondateur mythique de la <innerLink ref="dynastie">dynastie</innerLink> <innerLink ref="éponyme">éponyme</innerLink>.</xml>
+          <txt>de « sassan », nom du fondateur mythique de la dynastie éponyme.</txt>
+        </etym>
+      </etymology>
+      <pos type="adjectif" lemma="1" locution="0" gender="e" number="s">
+        <pronunciations>
+          <pron>sa.sa.nid</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="sassanide" gracePOS="Afpms" prons="sa.sa.nid"/>
+          <inflection form="sassanide" gracePOS="Afpfs" prons="sa.sa.nid"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml>Relatif à l'<innerLink ref="empire">empire</innerLink> <innerLink ref="perse">perse</innerLink> qui existait, en <innerLink ref="Iran">Iran</innerLink>, de 224 à 651; à son <innerLink ref="art">art</innerLink>, sa culture, etc.</xml>
+              <txt>Relatif à l'empire perse qui existait, en Iran, de 224 à 651; à son art, sa culture, etc.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Les souverains <b>sassanides</b>.</i>
+              </xml>
+              <txt>Les souverains sassanides.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="hyperonym">iranien</item>
+          <item type="hyperonym">persan</item>
+          <item type="hyperonym">perse</item>
+        </subsection>
+        <translations>
+          <trans lang="en">sassanid</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>stapédectomie</title>
+    <pageId>476115</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>du latin <foreignWord lang="la" sense="dif=stapes, stapedes" translit="dif=stapes, stapedes">stapes</foreignWord> et de <i><innerLink ref="ectomie">ectomie</innerLink></i> (« <innerLink ref="section">section</innerLink>, <innerLink ref="coupure">coupure</innerLink> »).</xml>
+          <txt>du latin stapes dif=stapes, stapedes (dif=stapes, stapedes) et de ectomie (« section, coupure »).</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>sta.pe.dɛk.tɔ.mi</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="stapédectomie" gracePOS="Ncfs" prons="sta.pe.dɛk.tɔ.mi"/>
+          <inflection form="stapédectomies" gracePOS="Ncfp" prons="sta.pe.dɛk.tɔ.mi"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="médecine"/>
+              </labels>
+              <xml><innerLink ref="ablation">Ablation</innerLink><innerLink ref="chirurgical">chirurgical</innerLink>e de l'<innerLink ref="étrier">étrier</innerLink> (<innerLink ref="platinectomie">platinectomie</innerLink> ; l'étrier est un <innerLink ref="os">os</innerLink> de l'<innerLink ref="oreille">oreille</innerLink> <innerLink ref="moyenne">moyenne</innerLink>) suivie de son <innerLink ref="remplacement">remplacement</innerLink> <innerLink ref="prosthétique">prosthétique</innerLink>.</xml>
+              <txt>Ablation chirurgicale de l'étrier (platinectomie ; l'étrier est un os de l'oreille moyenne) suivie de son remplacement prosthétique.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>stapédotomie</title>
+    <pageId>476119</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>du latin <foreignWord lang="la" sense="dif=stapes, stapedes" translit="dif=stapes, stapedes">stapes</foreignWord>, et de <i><innerLink ref="-tomie">-tomie</innerLink></i> (« <innerLink ref="section">section</innerLink>, <innerLink ref="coupure">coupure</innerLink> »).</xml>
+          <txt>du latin stapes dif=stapes, stapedes (dif=stapes, stapedes), et de -tomie (« section, coupure »).</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>sta.pe.dɔ.tɔ.mi</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="stapédotomie" gracePOS="Ncfs" prons="sta.pe.dɔ.tɔ.mi"/>
+          <inflection form="stapédotomies" gracePOS="Ncfp" prons="sta.pe.dɔ.tɔ.mi"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="médecine"/>
+              </labels>
+              <xml><innerLink ref="perforation">Perforation</innerLink><innerLink ref="chirurgicale">chirurgicale</innerLink> de la <innerLink ref="platine">platine</innerLink> de l'<innerLink ref="étrier">étrier</innerLink> (<innerLink ref="platinotomie">platinotomie</innerLink> ; la platine est la <innerLink ref="partie">partie</innerLink> de cet <innerLink ref="os">os</innerLink> de l'<innerLink ref="oreille">oreille</innerLink> <innerLink ref="moyenne">moyenne</innerLink> qui se <innerLink ref="place">place</innerLink> sur la <innerLink ref="fenêtre">fenêtre</innerLink> <innerLink ref="ovale">ovale</innerLink> de l'oreille <innerLink ref="interne">interne</innerLink>) et <innerLink ref="insertion">insertion</innerLink> d'un <innerLink ref="piston">piston</innerLink> <innerLink ref="prosthétique">prosthétique</innerLink>.</xml>
+              <txt>Perforation chirurgicale de la platine de l'étrier (platinotomie ; la platine est la partie de cet os de l'oreille moyenne qui se place sur la fenêtre ovale de l'oreille interne) et insertion d'un piston prosthétique.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>La <b>stapédotomie</b> peut remédier à la surdité due à l'otospongiose.</i>
+              </xml>
+              <txt>La stapédotomie peut remédier à la surdité due à l'otospongiose.</txt>
+            </example>
+          </definition>
+        </definitions>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>intersidéral</title>
+    <pageId>476192</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>adjectif <cf value="inter-|sidéral" lang="fr"/>.</xml>
+          <txt>adjectif voir inter- et sidéral.</txt>
+        </etym>
+      </etymology>
+      <pos type="adjectif" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>ɛ̃.tɛʁ.si.de.ʁal</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="intersidéral" gracePOS="Afpms" prons="ɛ̃.tɛʁ.si.de.ʁal"/>
+          <inflection form="intersidéraux" gracePOS="Afpmp" prons="ɛ̃.tɛʁ.si.de.ʁo"/>
+          <inflection form="intersidérale" gracePOS="Afpfs" prons="ɛ̃.tɛʁ.si.de.ʁal"/>
+          <inflection form="intersidérales" gracePOS="Afpfp" prons="ɛ̃.tɛʁ.si.de.ʁal"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml>Situés entre les <innerLink ref="étoile">étoile</innerLink>s.</xml>
+              <txt>Situés entre les étoiles.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>L'espace <innerLink ref="intersidéral">intersidéral</innerLink>.</i>
+              </xml>
+              <txt>L'espace intersidéral.</txt>
+            </example>
+            <example>
+              <xml>
+                <i>Les voyages <b>intersidéraux</b>.</i>
+              </xml>
+              <txt>Les voyages intersidéraux.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">interstellaire</item>
+        </subsection>
+        <translations>
+          <trans lang="en">interstellar</trans>
+          <trans lang="es">interestelar</trans>
+          <trans lang="eo">interstela</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>œillet superbe</title>
+    <pageId>476379</pageId>
+    <meta>
+      <category>Dicotylédones en français</category>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml><century>?</century> composé de <i><innerLink ref="œillet">œillet</innerLink></i> et <i><innerLink ref="superbe">superbe</innerLink></i>.</xml>
+          <txt>composé de œillet et superbe.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="1" gender="m" number="s">
+        <pronunciations>
+          <pron>œ.jɛ sy.pɛʁb</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="œillets superbes" gracePOS="Ncmp" prons="œ.jɛ sy.pɛʁb"/>
+          <inflection form="œillet superbe" gracePOS="Ncms" prons="œ.jɛ sy.pɛʁb"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="fleurs"/>
+              </labels>
+              <xml><innerLink ref="plante">Plante</innerLink><innerLink ref="herbacée">herbacée</innerLink><innerLink ref="vivace">vivace</innerLink> de la famille des <innerLink ref="Caryophyllacées">Caryophyllacées</innerLink>, originaire des régions tempérées de l'<innerLink ref="Ancien Monde">Ancien Monde</innerLink>.</xml>
+              <txt>Plante herbacée vivace de la famille des Caryophyllacées, originaire des régions tempérées de l'Ancien Monde.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>L'<b>œillet superbe</b> possède des fleurs odorantes.</i>
+              </xml>
+              <txt>L'œillet superbe possède des fleurs odorantes.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">Dianthus superbus</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>vitrauphanie</title>
+    <pageId>476436</pageId>
+    <meta/>
+    <text>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>vi.tʁo.fa.ni</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="vitrauphanie" gracePOS="Ncfs" prons="vi.tʁo.fa.ni"/>
+          <inflection form="vitrauphanies" gracePOS="Ncfp" prons="vi.tʁo.fa.ni"/>
+        </paradigm>
+        <definitions/>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>vitrophanie</title>
+    <pageId>476578</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml>variante orthographique récente de <i><innerLink ref="vitrauphanie">vitrauphanie</innerLink></i>.</xml>
+          <txt>variante orthographique récente de vitrauphanie.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>vit.ʁɔ.fa.ni</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="vitrophanie" gracePOS="Ncfs" prons="vit.ʁɔ.fa.ni"/>
+          <inflection form="vitrophanies" gracePOS="Ncfp" prons="vit.ʁɔ.fa.ni"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="technique"/>
+              </labels>
+              <xml><innerLink ref="adhésif">Adhésif</innerLink> permettant de coller une publicité sur une vitrine.</xml>
+              <txt>Adhésif permettant de coller une publicité sur une vitrine.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>vitrauphanie</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>bicaméral</title>
+    <pageId>476623</pageId>
+    <meta/>
+    <text>
+      <etymology>
+        <etym>
+          <xml><cf value="bi-|caméral" lang="fr"/>.</xml>
+          <txt>voir bi- et caméral.</txt>
+        </etym>
+      </etymology>
+      <pos type="adjectif" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>bi.ka.me.ʁal</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="bicaméral" gracePOS="Afpms" prons="bi.ka.me.ʁal"/>
+          <inflection form="bicaméraux" gracePOS="Afpmp" prons="bi.ka.me.ʁo"/>
+          <inflection form="bicamérale" gracePOS="Afpfs" prons="bi.ka.me.ʁal"/>
+          <inflection form="bicamérales" gracePOS="Afpfp" prons="bi.ka.me.ʁal"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml>Qui <innerLink ref="comporte">comporte</innerLink> un <innerLink ref="parlement">parlement</innerLink> <innerLink ref="divisé">divisé</innerLink> en <innerLink ref="deux">deux</innerLink> <innerLink ref="assemblée">assemblée</innerLink>s <innerLink ref="législative">législative</innerLink>s.</xml>
+              <txt>Qui comporte un parlement divisé en deux assemblées législatives.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="psychologie"/>
+              </labels>
+              <xml>Se dit de la <innerLink ref="pensée">pensée</innerLink> <innerLink ref="divisé">divisé</innerLink>e en deux <innerLink ref="fonction">fonction</innerLink>s <innerLink ref="cognitive">cognitive</innerLink>s : l'une qui <innerLink ref="parle">parle</innerLink> et <innerLink ref="ordonne">ordonne</innerLink> et l'autre qui <innerLink ref="écoute">écoute</innerLink> et <innerLink ref="obéit">obéit</innerLink>.</xml>
+              <txt>Se dit de la pensée divisée en deux fonctions cognitives : l'une qui parle et ordonne et l'autre qui écoute et obéit.</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="typographie"/>
+              </labels>
+              <xml>Qui <innerLink ref="oppose">oppose</innerLink> deux <innerLink ref="œil">œil</innerLink>s de <innerLink ref="format">format</innerLink>, deux <innerLink ref="casse">casse</innerLink>s <innerLink ref="distinct">distinct</innerLink>es, c'est-à-dire <innerLink ref="comporte">comporte</innerLink> <innerLink ref="capitale">capitale</innerLink> et <innerLink ref="minuscule">minuscule</innerLink>.</xml>
+              <txt>Qui oppose deux œils de format, deux casses distinctes, c'est-à-dire comporte capitale et minuscule.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="antonym">monocaméral</item>
+          <item type="antonym">unicaméral</item>
+        </subsection>
+        <subsection type="morpho">
+          <item type="derivative">bicamérisme</item>
+          <item type="derivative">bicamériste</item>
+          <item type="derivative">bicaméralisme</item>
+        </subsection>
+        <translations>
+          <trans lang="en">bicameral</trans>
+          <trans lang="ja">二院制</trans>
+          <trans lang="en">bicameral</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>rotengle</title>
+    <pageId>476916</pageId>
+    <meta>
+      <category>Poissons en français</category>
+      <reference>Meyer</reference>
+      <reference>TLFi</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <labels>
+            <label type="diachronic" value="1764"/>
+          </labels>
+          <xml><date>1764</date> de l'allemand <foreignWord lang="de">roteugel</foreignWord> diminutif de <i><innerLink ref="rotauge">rotauge</innerLink></i> (« gardon », littéralement : « œil rouge ») <cf value="rot|auge" lang="de"/>.</xml>
+          <txt>de l'allemand roteugel  diminutif de rotauge (« gardon », littéralement : « œil rouge ») voir rot et auge.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>ʁɔ.tãgl</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="rotengle" gracePOS="Ncms" prons="ʁɔ.tãgl"/>
+          <inflection form="rotengles" gracePOS="Ncmp" prons="ʁɔ.tãgl"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="zoologie"/>
+              </labels>
+              <xml>Espèce de <innerLink ref="poisson">poisson</innerLink> osseux d'eau douce, des eaux calmes d'Europe et d'Asie, proche du <innerLink ref="gardon">gardon</innerLink>, dont les nageoires anale et ventrales ainsi que la queue et l'iris de l'œil sont de couleur <innerLink ref="rouge">rouge</innerLink> vif.</xml>
+              <txt>Espèce de poisson osseux d'eau douce, des eaux calmes d'Europe et d'Asie, proche du gardon, dont les nageoires anale et ventrales ainsi que la queue et l'iris de l'œil sont de couleur rouge vif.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>Rotengle</item>
+        </subsection>
+        <subsection type="semRel">
+          <item type="synonym">gardon rouge</item>
+          <item type="synonym">rousseau</item>
+          <item type="synonym">carouge</item>
+          <item type="synonym">chardin</item>
+          <item type="hyperonym">téléostéen</item>
+          <item type="hyperonym">cyprinidé</item>
+        </subsection>
+        <subsection type="morpho">
+          <item type="derivative">rotengle grec</item>
+        </subsection>
+        <translations>
+          <trans lang="conv">Scardinius erythrophthalmus</trans>
+          <trans lang="de">Rotfeder</trans>
+          <trans lang="en">common rudd</trans>
+          <trans lang="es">gardí</trans>
+          <trans lang="it">scardola</trans>
+          <trans lang="nl">ruisvoorn</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>gardon rouge</title>
+    <pageId>476927</pageId>
+    <meta>
+      <category>Poissons en français</category>
+    </meta>
+    <text>
+      <pos type="nom" lemma="1" locution="1" gender="m" number="s">
+        <pronunciations>
+          <pron>gaʁ.dɔ̃ ʁuʒ</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="gardons rouges" gracePOS="Ncmp" prons="gaʁ.dɔ̃ ʁuʒ"/>
+          <inflection form="gardon rouge" gracePOS="Ncms" prons="gaʁ.dɔ̃ ʁuʒ"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="zoologie"/>
+              </labels>
+              <xml>Synonyme de <innerLink ref="rotengle">rotengle</innerLink> (poisson).</xml>
+              <txt>Synonyme de rotengle (poisson).</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="zoologie"/>
+              </labels>
+              <xml>Synonyme d'<innerLink ref="ide mélanote">ide mélanote</innerLink> (poisson).</xml>
+              <txt>Synonyme d'ide mélanote (poisson).</txt>
+            </gloss>
+          </definition>
+        </definitions>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>apperception</title>
+    <pageId>477162</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>probablement sous l'influence de la forme anglaise <i><innerLink ref="apperception#en">apperception</innerLink></i>.</xml>
+          <txt>probablement sous l'influence de la forme anglaise apperception.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <pronunciations>
+          <pron>a.pɛʁ.sɛp.sjɔ̃</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="apperception" gracePOS="Ncfs" prons="a.pɛʁ.sɛp.sjɔ̃"/>
+          <inflection form="apperceptions" gracePOS="Ncfp" prons="a.pɛʁ.sɛp.sjɔ̃"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><innerLink ref="acte">Acte</innerLink> de l'<innerLink ref="âme">âme</innerLink> qui se <innerLink ref="considère">considère</innerLink> comme le <innerLink ref="sujet">sujet</innerLink> d'une telle <innerLink ref="perception">perception</innerLink>.</xml>
+              <txt>Acte de l'âme qui se considère comme le sujet d'une telle perception.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>L'<b>apperception</b> pure ou originelle de la conscience garantit l'unité avec soi-même du sujet, elle est condition de possibilité de la « connaissance a priori » qu'exige la Critique de la raison pure. Le sujet de la multiplicité est le contre-sujet du sujet de l'<b>apperception</b> transcendentale.</i>
+              </xml>
+              <txt>L'apperception pure ou originelle de la conscience garantit l'unité avec soi-même du sujet, elle est condition de possibilité de la « connaissance a priori » qu'exige la Critique de la raison pure. Le sujet de la multiplicité est le contre-sujet du sujet de l'apperception transcendentale.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>aperception</item>
+        </subsection>
+        <translations>
+          <trans lang="en">apperception</trans>
+          <trans lang="zh">明觉</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>rentras</title>
+    <pageId>477164</pageId>
+    <meta/>
+    <text>
+      <pos type="verbe" lemma="0" locution="0">
+        <pronunciations>
+          <pron>ʁã.tʁa</pron>
+        </pronunciations>
+        <inflectionInfos>
+          <inflectedForm gracePOS="Vmis2s-" lemma="rentrer"/>
+        </inflectionInfos>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><i>Deuxième personne du singulier du passé simple de</i><innerLink ref="rentrer">rentrer</innerLink>.</xml>
+              <txt>Deuxième personne du singulier du passé simple de rentrer.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>apperceptibilité</title>
+    <pageId>477178</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>
+            <cf value="apperception"/>
+          </xml>
+          <txt>voir apperception</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="f" number="s">
+        <paradigm>
+          <inflection form="apperceptibilité" gracePOS="Ncfs" prons=""/>
+          <inflection form="apperceptibilités" gracePOS="Ncfp" prons=""/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diachronic" value="vieilli"/>
+                <label type="diachronic" value="désuet"/>
+              </labels>
+              <xml><innerLink ref="faculté">Faculté</innerLink> d'<innerLink ref="apercevoir">apercevoir</innerLink>, de <innerLink ref="juger">juger</innerLink>, de <innerLink ref="comparer">comparer</innerLink> les <innerLink ref="impression">impression</innerLink>s <innerLink ref="reçue">reçue</innerLink>s.</xml>
+              <txt>Faculté d'apercevoir, de juger, de comparer les impressions reçues.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>aperceptibilité</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>rentrâtes</title>
+    <pageId>477188</pageId>
+    <meta/>
+    <text>
+      <pos type="verbe" lemma="0" locution="0">
+        <pronunciations>
+          <pron>ʁã.tʁat</pron>
+        </pronunciations>
+        <inflectionInfos>
+          <inflectedForm gracePOS="Vmis2p-" lemma="rentrer"/>
+        </inflectionInfos>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml><i>Deuxième personne du pluriel du passé simple de</i><innerLink ref="rentrer">rentrer</innerLink>.</xml>
+              <txt>Deuxième personne du pluriel du passé simple de rentrer.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>appenser</title>
+    <pageId>477189</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml><cf value="a-|penser|m=oui" lang="fr"/>.</xml>
+          <txt>voir a-, penser et m=oui.</txt>
+        </etym>
+      </etymology>
+      <pos type="verbe" lemma="1" locution="0">
+        <pronunciations>
+          <pron>a.pã.se</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="appensions" gracePOS="Vmsp1p-" prons="a.pã.sjɔ̃"/>
+          <inflection form="appenseriez" gracePOS="Vmcp2p-" prons="a.pã.sə.ʁje"/>
+          <inflection form="appenses" gracePOS="Vmsp2s-" prons="a.pãs"/>
+          <inflection form="appensai" gracePOS="Vmis1s-" prons="a.pã.se"/>
+          <inflection form="appensiez" gracePOS="Vmsp2p-" prons="a.pã.sje"/>
+          <inflection form="appenserai" gracePOS="Vmif1s-" prons="a.pã.sə.ʁe"/>
+          <inflection form="appensassions" gracePOS="Vmsi1p-" prons="a.pã.sa.sjɔ̃"/>
+          <inflection form="appenserez" gracePOS="Vmif2p-" prons="a.pã.sə.ʁe"/>
+          <inflection form="appensons" gracePOS="Vmmp1p-" prons="a.pã.sɔ̃"/>
+          <inflection form="appenses" gracePOS="Vmip2s-" prons="a.pãs"/>
+          <inflection form="appensais" gracePOS="Vmii1s-" prons="a.pã.sɛ"/>
+          <inflection form="appensassiez" gracePOS="Vmsi2p-" prons="a.pã.sa.sje"/>
+          <inflection form="appensaient" gracePOS="Vmii3p-" prons="a.pã.sɛ"/>
+          <inflection form="appensassent" gracePOS="Vmsi3p-" prons="a.pã.sas"/>
+          <inflection form="appensa" gracePOS="Vmis3s-" prons="a.pã.sa"/>
+          <inflection form="appense" gracePOS="Vmip3s-" prons="a.pãs"/>
+          <inflection form="appenserais" gracePOS="Vmcp1s-" prons="a.pã.sə.ʁɛ"/>
+          <inflection form="appenseront" gracePOS="Vmif3p-" prons="a.pã.sə.ʁɔ̃"/>
+          <inflection form="appense" gracePOS="Vmip1s-" prons="a.pãs"/>
+          <inflection form="appensent" gracePOS="Vmip3p-" prons="a.pãs"/>
+          <inflection form="appensez" gracePOS="Vmip2p-" prons="a.pã.se"/>
+          <inflection form="appenserais" gracePOS="Vmcp2s-" prons="a.pã.sə.ʁɛ"/>
+          <inflection form="appensasse" gracePOS="Vmsi1s-" prons="a.pã.sas"/>
+          <inflection form="appensent" gracePOS="Vmsp3p-" prons="a.pãs"/>
+          <inflection form="appense" gracePOS="Vmsp1s-" prons="a.pãs"/>
+          <inflection form="appenserions" gracePOS="Vmcp1p-" prons="a.pã.sə.ʁjɔ̃"/>
+          <inflection form="appensées" gracePOS="Vmps-pf" prons=""/>
+          <inflection form="appensé" gracePOS="Vmps-sm" prons="a.pã.se"/>
+          <inflection form="appenseras" gracePOS="Vmif2s-" prons="a.pã.sə.ʁa"/>
+          <inflection form="appensiez" gracePOS="Vmii2p-" prons="a.pã.sje"/>
+          <inflection form="appenserait" gracePOS="Vmcp3s-" prons="a.pã.sə.ʁɛ"/>
+          <inflection form="appensait" gracePOS="Vmii3s-" prons="a.pã.sɛ"/>
+          <inflection form="appense" gracePOS="Vmsp3s-" prons="a.pãs"/>
+          <inflection form="appensâtes" gracePOS="Vmis2p-" prons="a.pã.sat"/>
+          <inflection form="appensée" gracePOS="Vmps-sf" prons=""/>
+          <inflection form="appenserons" gracePOS="Vmif1p-" prons="a.pã.sə.ʁɔ̃"/>
+          <inflection form="appensez" gracePOS="Vmmp2p-" prons="a.pã.se"/>
+          <inflection form="appenser" gracePOS="Vmn----" prons="a.pã.se"/>
+          <inflection form="appensons" gracePOS="Vmip1p-" prons="a.pã.sɔ̃"/>
+          <inflection form="appensèrent" gracePOS="Vmis3p-" prons="a.pã.sɛʁ"/>
+          <inflection form="appensais" gracePOS="Vmii2s-" prons="a.pã.sɛ"/>
+          <inflection form="appensés" gracePOS="Vmps-pm" prons=""/>
+          <inflection form="appensant" gracePOS="Vmpp---" prons="a.pã.sã"/>
+          <inflection form="appensasses" gracePOS="Vmsi2s-" prons="a.pã.sas"/>
+          <inflection form="appensas" gracePOS="Vmis2s-" prons="a.pã.sa"/>
+          <inflection form="appenseraient" gracePOS="Vmcp3p-" prons="a.pã.sə.ʁɛ"/>
+          <inflection form="appensions" gracePOS="Vmii1p-" prons="a.pã.sjɔ̃"/>
+          <inflection form="appensera" gracePOS="Vmif3s-" prons="a.pã.sə.ʁa"/>
+          <inflection form="appense" gracePOS="Vmmp2s-" prons="a.pãs"/>
+          <inflection form="appensâmes" gracePOS="Vmis1p-" prons="a.pã.sam"/>
+          <inflection form="appensât" gracePOS="Vmsi3s-" prons="a.pã.sa"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diachronic" value="vieilli"/>
+                <label type="diafrequential" value="rare"/>
+              </labels>
+              <xml><innerLink ref="méditer">Méditer</innerLink> avant d'<innerLink ref="agir">agir</innerLink>; <innerLink ref="former">former</innerLink> un <innerLink ref="projet">projet</innerLink>.</xml>
+              <txt>Méditer avant d'agir; former un projet.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="morpho">
+          <item type="derivative">guet-apens</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>appendiculé</title>
+    <pageId>477207</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>
+            <cf value="appendicule"/>
+          </xml>
+          <txt>voir appendicule</txt>
+        </etym>
+      </etymology>
+      <pos type="adjectif" lemma="1" locution="0" gender="m" number="s">
+        <paradigm>
+          <inflection form="appendiculé" gracePOS="Afpms" prons=""/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <xml>Muni d'<innerLink ref="appendice">appendice</innerLink>s</xml>
+              <txt>Muni d'appendices</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="botanique"/>
+              </labels>
+              <xml><innerLink ref="terminé">Terminé</innerLink> par des <innerLink ref="appendice">appendice</innerLink>s</xml>
+              <txt>Terminé par des appendices</txt>
+            </gloss>
+          </definition>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="domain" value="mycologie"/>
+              </labels>
+              <xml><innerLink ref="bordé">Bordé</innerLink> par des <innerLink ref="appendice">appendice</innerLink>s, en <innerLink ref="parlant">parlant</innerLink> de la <innerLink ref="marge">marge</innerLink>.</xml>
+              <txt>Bordé par des appendices, en parlant de la marge.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <translations>
+          <trans lang="ca">apendiculat</trans>
+        </translations>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>appiècement</title>
+    <pageId>477297</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml><cf value="a-|pièce|-ment|" lang="fr"/>.</xml>
+          <txt>voir a-, pièce, -ment et .</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>a.pjɛs.mã</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="appiècement" gracePOS="Ncms" prons="a.pjɛs.mã"/>
+          <inflection form="appiècements" gracePOS="Ncmp" prons="a.pjɛs.mã"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diachronic" value="vieilli"/>
+                <label type="diafrequential" value="rare"/>
+              </labels>
+              <xml>Action d'<innerLink ref="appiècer">appiècer</innerLink></xml>
+              <txt>Action d'appiècer</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">rapiècetage</item>
+          <item type="synonym">rapiécage</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>rapiècetage</title>
+    <pageId>477308</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml><cf value="rapiéceter|-age" lang="fr"/>.</xml>
+          <txt>voir rapiéceter et -age.</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <pronunciations>
+          <pron>ʁa.pjɛs.taʒ</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="rapiècetage" gracePOS="Ncms" prons="ʁa.pjɛs.taʒ"/>
+          <inflection form="rapiècetages" gracePOS="Ncmp" prons="ʁa.pjɛs.taʒ"/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diachronic" value="vieilli"/>
+                <label type="diafrequential" value="rare"/>
+              </labels>
+              <xml>Action de <innerLink ref="rapiéceter">rapiéceter</innerLink>.</xml>
+              <txt>Action de rapiéceter.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Le pourtour du manteau présente un <b>rapiècetage</b> peu élégant.</i>
+              </xml>
+              <txt>Le pourtour du manteau présente un rapiècetage peu élégant.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="alternativeForm">
+          <item>rapiécetage</item>
+        </subsection>
+        <subsection type="semRel">
+          <item type="synonym">appiècement</item>
+          <item type="synonym">rapiécage</item>
+          <item type="synonym">rapiéçure</item>
+          <item type="synonym">rapiècement</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>rapiécage</title>
+    <pageId>477327</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml>
+            <cf value="re-|a-|pièce|-age"/>
+          </xml>
+          <txt>voir re-, a-, pièce et -age</txt>
+        </etym>
+      </etymology>
+      <pos type="nom" lemma="1" locution="0" gender="m" number="s">
+        <paradigm>
+          <inflection form="rapiécage" gracePOS="Ncms" prons=""/>
+          <inflection form="rapiécages" gracePOS="Ncmp" prons=""/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diachronic" value="vieilli"/>
+                <label type="diafrequential" value="rare"/>
+              </labels>
+              <xml>Action de <innerLink ref="rapiécer">rapiécer</innerLink>.</xml>
+              <txt>Action de rapiécer.</txt>
+            </gloss>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">appiècement</item>
+          <item type="synonym">rapiècetage</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+  <article>
+    <title>appiécer</title>
+    <pageId>477352</pageId>
+    <meta>
+      <reference>Rivarol</reference>
+    </meta>
+    <text>
+      <etymology>
+        <etym>
+          <xml><cf value="ad-|piécer" lang="fr"/>.</xml>
+          <txt>voir ad- et piécer.</txt>
+        </etym>
+      </etymology>
+      <pos type="verbe" lemma="1" locution="0">
+        <pronunciations>
+          <pron>a.pje.se</pron>
+        </pronunciations>
+        <paradigm>
+          <inflection form="appiéçais" gracePOS="Vmii2s-" prons="a.pje.sɛ"/>
+          <inflection form="appiècerez" gracePOS="Vmif2p-" prons="a.pjɛ.sʁe;a.pjɛ.sə.ʁe"/>
+          <inflection form="appiécerez" gracePOS="Vmif2p-" prons=""/>
+          <inflection form="appiécées" gracePOS="Vmps-pf" prons=""/>
+          <inflection form="appiéçât" gracePOS="Vmsi3s-" prons="a.pje.sa"/>
+          <inflection form="appiéçai" gracePOS="Vmis1s-" prons="a.pje.se"/>
+          <inflection form="appièce" gracePOS="Vmmp2s-" prons="a.pjɛs"/>
+          <inflection form="appiècerait" gracePOS="Vmcp3s-" prons="a.pjɛ.sʁɛ;a.pjɛ.sə.ʁɛ"/>
+          <inflection form="appiécerait" gracePOS="Vmcp3s-" prons=""/>
+          <inflection form="appiécions" gracePOS="Vmii1p-" prons="a.pje.sjɔ̃"/>
+          <inflection form="appiècerais" gracePOS="Vmcp2s-" prons="a.pjɛ.sʁɛ;a.pjɛ.sə.ʁɛ"/>
+          <inflection form="appiécerais" gracePOS="Vmcp2s-" prons=""/>
+          <inflection form="appièce" gracePOS="Vmip1s-" prons="a.pjɛs"/>
+          <inflection form="appièce" gracePOS="Vmsp3s-" prons="a.pjɛs"/>
+          <inflection form="appiéçâmes" gracePOS="Vmis1p-" prons="a.pje.sam"/>
+          <inflection form="appièces" gracePOS="Vmip2s-" prons="a.pjɛs"/>
+          <inflection form="appièceriez" gracePOS="Vmcp2p-" prons="a.pjɛ.sə.ʁje"/>
+          <inflection form="appiéceriez" gracePOS="Vmcp2p-" prons=""/>
+          <inflection form="appiéça" gracePOS="Vmis3s-" prons="a.pje.sa"/>
+          <inflection form="appiéçait" gracePOS="Vmii3s-" prons="a.pje.sɛ"/>
+          <inflection form="appiècerons" gracePOS="Vmif1p-" prons="a.pjɛ.sʁɔ̃;a.pjɛ.sə.ʁɔ̃"/>
+          <inflection form="appiécerons" gracePOS="Vmif1p-" prons=""/>
+          <inflection form="appiéçais" gracePOS="Vmii1s-" prons="a.pje.sɛ"/>
+          <inflection form="appiècerions" gracePOS="Vmcp1p-" prons="a.pjɛ.sə.ʁjɔ̃"/>
+          <inflection form="appiécerions" gracePOS="Vmcp1p-" prons=""/>
+          <inflection form="appiéçant" gracePOS="Vmpp---" prons="a.pje.sã"/>
+          <inflection form="appièceraient" gracePOS="Vmcp3p-" prons="a.pjɛ.sʁɛ;a.pjɛ.sə.ʁɛ"/>
+          <inflection form="appiéceraient" gracePOS="Vmcp3p-" prons=""/>
+          <inflection form="appiéçaient" gracePOS="Vmii3p-" prons="a.pje.sɛ"/>
+          <inflection form="appiéçons" gracePOS="Vmip1p-" prons="a.pje.sɔ̃"/>
+          <inflection form="appiécions" gracePOS="Vmsp1p-" prons="a.pje.sjɔ̃"/>
+          <inflection form="appièceront" gracePOS="Vmif3p-" prons="a.pjɛ.sʁɔ̃;a.pjɛ.sə.ʁɔ̃"/>
+          <inflection form="appiéceront" gracePOS="Vmif3p-" prons=""/>
+          <inflection form="appiécèrent" gracePOS="Vmis3p-" prons="a.pje.sɛʁ"/>
+          <inflection form="appiéciez" gracePOS="Vmii2p-" prons="a.pje.sje"/>
+          <inflection form="appiéçassiez" gracePOS="Vmsi2p-" prons="a.pje.sa.sje"/>
+          <inflection form="appiècent" gracePOS="Vmip3p-" prons="a.pjɛs"/>
+          <inflection form="appiéçâtes" gracePOS="Vmis2p-" prons="a.pje.sat"/>
+          <inflection form="appièce" gracePOS="Vmip3s-" prons="a.pjɛs"/>
+          <inflection form="appiècera" gracePOS="Vmif3s-" prons="a.pjɛ.sʁa;a.pjɛ.sə.ʁa"/>
+          <inflection form="appiécera" gracePOS="Vmif3s-" prons=""/>
+          <inflection form="appiècent" gracePOS="Vmsp3p-" prons="a.pjɛs"/>
+          <inflection form="appiéçassent" gracePOS="Vmsi3p-" prons="a.pje.sas"/>
+          <inflection form="appiécez" gracePOS="Vmip2p-" prons="a.pje.se"/>
+          <inflection form="appiéçassions" gracePOS="Vmsi1p-" prons="a.pje.sa.sjɔ̃"/>
+          <inflection form="appiécés" gracePOS="Vmps-pm" prons=""/>
+          <inflection form="appiéciez" gracePOS="Vmsp2p-" prons="a.pje.sje"/>
+          <inflection form="appiécer" gracePOS="Vmn----" prons="a.pje.se"/>
+          <inflection form="appièces" gracePOS="Vmsp2s-" prons="a.pjɛs"/>
+          <inflection form="appiécez" gracePOS="Vmmp2p-" prons="a.pje.se"/>
+          <inflection form="appiéçons" gracePOS="Vmmp1p-" prons="a.pje.sɔ̃"/>
+          <inflection form="appiéças" gracePOS="Vmis2s-" prons="a.pje.sa"/>
+          <inflection form="appiécé" gracePOS="Vmps-sm" prons="a.pje.se"/>
+          <inflection form="appièceras" gracePOS="Vmif2s-" prons="a.pjɛ.sʁa;a.pjɛ.sə.ʁa"/>
+          <inflection form="appiéceras" gracePOS="Vmif2s-" prons=""/>
+          <inflection form="appièce" gracePOS="Vmsp1s-" prons="a.pjɛs"/>
+          <inflection form="appiéçasses" gracePOS="Vmsi2s-" prons="a.pje.sas"/>
+          <inflection form="appiéçasse" gracePOS="Vmsi1s-" prons="a.pje.sas"/>
+          <inflection form="appiècerai" gracePOS="Vmif1s-" prons="a.pjɛ.sʁe;a.pjɛ.sə.ʁe"/>
+          <inflection form="appiécerai" gracePOS="Vmif1s-" prons=""/>
+          <inflection form="appiècerais" gracePOS="Vmcp1s-" prons="a.pjɛ.sʁɛ;a.pjɛ.sə.ʁɛ"/>
+          <inflection form="appiécerais" gracePOS="Vmcp1s-" prons=""/>
+          <inflection form="appiécée" gracePOS="Vmps-sf" prons=""/>
+        </paradigm>
+        <definitions>
+          <definition>
+            <gloss>
+              <labels>
+                <label type="diachronic" value="vieilli"/>
+                <label type="diafrequential" value="rare"/>
+              </labels>
+              <xml><innerLink ref="coudre">Coudre</innerLink> une <innerLink ref="pièce">pièce</innerLink> sur un <innerLink ref="tissu">tissu</innerLink>.</xml>
+              <txt>Coudre une pièce sur un tissu.</txt>
+            </gloss>
+            <example>
+              <xml>
+                <i>Chaque apiéceur, ayant quinze bouts à <b>appiécer</b>, ramasse plusieurs rubans à la fois et, les plaçant sur son bras gauche, il avance le long du métier en joignant les bouts successivement avec la main droite.</i>
+              </xml>
+              <txt>Chaque apiéceur, ayant quinze bouts à appiécer, ramasse plusieurs rubans à la fois et, les plaçant sur son bras gauche, il avance le long du métier en joignant les bouts successivement avec la main droite.</txt>
+            </example>
+          </definition>
+        </definitions>
+        <subsection type="semRel">
+          <item type="synonym">rapièceter</item>
+          <item type="synonym">rapiécer</item>
+        </subsection>
+      </pos>
+    </text>
+  </article>
+</glawi>

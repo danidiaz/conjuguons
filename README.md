@@ -644,3 +644,15 @@ Observations:
 
 [adopt node vs. import node (Java XML)](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node))
 
+
+Context in `rg`:
+
+    -C, --context <NUM>
+            Show NUM lines before and after each match. This is equivalent to providing
+            both the -B/--before-context and -A/--after-context flags with the same value.
+
+            This overrides both the -B/--before-context and -A/--after-context flags.
+
+        --context-separator <SEPARATOR>
+            The string used to separate non-contiguous context lines in the output. Escape
+            sequences like \x7F or \t may be used. The default value is --.
