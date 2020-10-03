@@ -545,6 +545,29 @@ transitif...
               <txt>Cesser de travailler, d'agir, d'être en mouvement, pour faire disparaître la fatigue.</txt>
             </gloss>
 
+An example of the structure for *reporser*:
+
+    <article>
+      <title>reposer</title>
+      <pageId>10676</pageId>
+      <meta>
+        <import>DAF8</import>
+      </meta>
+      <text>
+        <pronunciations>
+          <pron area="France">╩ü╔Ö.po.ze</pron>
+        </pronunciations>
+        <etymology>...</etymology>
+        <pos type="verbe" lemma="1" locution="0" homoNb="1">...</pos>
+        <pos type="verbe" lemma="1" locution="0" homoNb="2">...</pos>
+      </text>
+    </article>
+
+Obtained with the command:
+
+    rg -C 1000 "<title>reposer</title>" GLAWI_FR_work_D2015-12-26_R2016-05-18.xml > foo.txt
+
+
 [sqlite tutorial](https://www.sqlitetutorial.net/)
 
 [sqlite cli](https://sqlite.org/cli.html)
