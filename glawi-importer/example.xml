@@ -1,18 +1,18 @@
-<items>
-   <item>
+<glawi>
+   <article>
 
         <name> nam1 </name>
 
         <price> 30 </price>
 
-   </item>
+   </article>
 
-   <item>
+   <article>
 
         <name> nam3 </name>
 
         <price> 40 </price>
 
-   </item>
+   </article>
 
-</items>
+</glawi>
