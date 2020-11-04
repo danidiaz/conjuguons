@@ -37,9 +37,11 @@ public class Importer implements ApplicationRunner {
 
         try (var reader = new BufferedReader(new FileReader(fileSupplier.get(), StandardCharsets.UTF_8))) {
             final Elements elements = new Elements("glawi", "article", () -> reader);
-            elements.stream().forEach((element) -> {
-                System.out.println(pprint(element));
-            });
+            elements.stream()
+                    .limit(15)
+                    .forEach((element) -> {
+                        System.out.println(pprint(element));
+                    });
         }
     }
 
